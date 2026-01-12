@@ -1,6 +1,6 @@
 import { Download, ChevronDown } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { useLanguage, Language } from '../context/LanguageContext';
+import { useLanguage, type Language } from '../context/LanguageContext';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

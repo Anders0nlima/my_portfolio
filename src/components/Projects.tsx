@@ -1,6 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-// Usamos 'import type' para satisfazer o erro verbatimModuleSyntax do seu VS Code
+// 'import type' resolve o erro de SyntaxError no Vite ao importar interfaces
 import type { Project } from '../App';
 
 interface ProjectsProps {
@@ -11,7 +11,7 @@ interface ProjectsProps {
 export function Projects({ onProjectClick, projectImages }: ProjectsProps) {
   const { t } = useLanguage();
 
-  // Garantimos que projectsData seja um array para evitar erro de .map
+  // O fallback '|| []' evita que o app quebre se o JSON de tradução demorar a carregar
   const projectsData = (t('projects.projects') as any[]) || [];
 
   const projects: Project[] = projectsData.map((proj, index) => ({
@@ -30,7 +30,8 @@ export function Projects({ onProjectClick, projectImages }: ProjectsProps) {
   }));
 
   return (
-    <section id="projects" className="py-24 px-6 bg-[#0a0a0a]">
+    /* Removido o id="projects" para focar no comportamento de página única */
+    <section className="py-24 px-6 bg-[#0a0a0a] min-h-screen">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -51,7 +52,7 @@ export function Projects({ onProjectClick, projectImages }: ProjectsProps) {
               className="group bg-[#121212] border border-gray-800 rounded-xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 cursor-pointer"
               onClick={() => onProjectClick(project)}
             >
-              {/* Project Image */}
+              {/* Imagem do Projeto */}
               <div className="relative h-64 overflow-hidden bg-gray-900">
                 <img
                   src={project.image}
@@ -61,7 +62,7 @@ export function Projects({ onProjectClick, projectImages }: ProjectsProps) {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-60"></div>
               </div>
 
-              {/* Project Content */}
+              {/* Conteúdo do Card */}
               <div className="p-6 space-y-4">
                 <h3 className="text-2xl font-semibold text-white group-hover:text-cyan-400 transition-colors">
                   {project.title}
@@ -71,7 +72,7 @@ export function Projects({ onProjectClick, projectImages }: ProjectsProps) {
                   {project.description}
                 </p>
 
-                {/* Tech Tags */}
+                {/* Tags de Tecnologia */}
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (
                     <span
@@ -83,7 +84,7 @@ export function Projects({ onProjectClick, projectImages }: ProjectsProps) {
                   ))}
                 </div>
 
-                {/* Visual CTA */}
+                {/* CTA Visual */}
                 <div className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium group/btn mt-4">
                   <span>{t('projects.viewCaseStudy')}</span>
                   <ExternalLink 

@@ -30,12 +30,15 @@ const About = () => {
     { key: 'volunteer', label: t('about.experience.volunteer'), icon: 'heart' }
   ];
 
+  // Adicionada uma proteção (fallback para array vazio) para evitar erro no .map
   const getExperiences = (tab: ExperienceTab): ExperienceItem[] => {
-    return t(`about.experience.${tab}Exp`) as any;
+    const data = t(`about.experience.${tab}Exp`);
+    return Array.isArray(data) ? data : [];
   };
 
   return (
-    <section id="about" className={styles.about}>
+    /* Removido o id="about" para focar na estrutura de página dedicada */
+    <section className={styles.about}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>
@@ -95,7 +98,7 @@ const About = () => {
           </div>
 
           <div className={styles.timeline}>
-            {getExperiences(activeTab).map((exp: ExperienceItem, index: number) => (
+            {getExperiences(activeTab).map((exp, index) => (
               <div key={index} className={styles.timelineItem}>
                 <div className={styles.timelineDot}></div>
 

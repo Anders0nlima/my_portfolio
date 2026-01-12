@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom'; // Importamos as ferramentas de rota
 import { useLanguage, type Language } from '../../context/LanguageContext';
 import styles from './Header.module.css';
 
@@ -6,6 +7,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showLangDropdown, setShowLangDropdown] = useState(false);
   const { language, setLanguage, t } = useLanguage();
+  const location = useLocation(); // Para saber em qual página estamos
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,19 +17,6 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
-
   const languages: { code: Language; label: string; flag: string }[] = [
     { code: 'en', label: 'English', flag: '🇬🇧' },
     { code: 'pt', label: 'Português', flag: '🇵🇹' },
@@ -36,36 +25,40 @@ const Header = () => {
 
   const currentLang = languages.find(lang => lang.code === language);
 
+  // Função auxiliar para definir se o link está ativo (opcional para estilo)
+  const isActive = (path: string) => location.pathname === path;
+
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <button 
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className={styles.logo}
-          >
+          {/* Logo agora é um Link para a Home (/) */}
+          <Link to="/" className={styles.logo}>
             Data Portfolio
-          </button>
+          </Link>
 
           <nav className={styles.nav}>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className={styles.navLink}
+            {/* Trocamos botões por componentes Link */}
+            <Link 
+              to="/about" 
+              className={`${styles.navLink} ${isActive('/about') ? styles.active : ''}`}
             >
               {t('nav.about')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className={styles.navLink}
+            </Link>
+            
+            <Link 
+              to="/projects" 
+              className={`${styles.navLink} ${isActive('/projects') ? styles.active : ''}`}
             >
               {t('nav.projects')}
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className={styles.navLink}
+            </Link>
+            
+            <Link 
+              to="/contact" 
+              className={`${styles.navLink} ${isActive('/contact') ? styles.active : ''}`}
             >
               {t('nav.contact')}
-            </button>
+            </Link>
 
             <div className={styles.langSwitcher}>
               <button 

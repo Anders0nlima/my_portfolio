@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -8,6 +9,7 @@ import Contact from './components/Contact/Contact';
 import CaseStudyModal from './components/CaseStudyModal/CaseStudyModal';
 import styles from './App.module.css';
 
+// Interface de tipos
 export interface Project {
   id: number;
   title: string;
@@ -19,6 +21,15 @@ export interface Project {
   result: string;
   chartImages: string[];
 }
+
+// Componente auxiliar para resetar o scroll ao mudar de página
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -32,27 +43,48 @@ function App() {
 
   return (
     <LanguageProvider>
-      <div className={styles.app}>
-        <Header />
-        
-        <main className={styles.main}>
-          <Hero />
-          <About />
-          <Projects onProjectClick={setSelectedProject} projectImages={projectImages} />
-          <Contact />
-        </main>
+      
+        <ScrollToTop />
+        <div className={styles.app}>
+          <Header />
+          
+          <main className={styles.main}>
+            <Routes>
+              {/* Rota principal: Apenas o Hero (Home) */}
+              <Route path="/" element={<Hero />} />
+              
+              {/* Rota Sobre Mim */}
+              <Route path="/about" element={<About />} />
+              
+              {/* Rota Projetos */}
+              <Route 
+                path="/projects" 
+                element={
+                  <Projects 
+                    onProjectClick={setSelectedProject} 
+                    projectImages={projectImages} 
+                  />
+                } 
+              />
+              
+              {/* Rota Contato */}
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
 
-        <footer className={styles.footer}>
-          <p>&copy; 2026 Data Portfolio. All rights reserved.</p>
-        </footer>
+          <footer className={styles.footer}>
+            <p>&copy; {new Date().getFullYear()} Data Portfolio. All rights reserved.</p>
+          </footer>
 
-        {selectedProject && (
-          <CaseStudyModal 
-            project={selectedProject} 
-            onClose={() => setSelectedProject(null)} 
-          />
-        )}
-      </div>
+          {/* O Modal continua aqui para poder ser aberto de qualquer página que liste projetos */}
+          {selectedProject && (
+            <CaseStudyModal 
+              project={selectedProject} 
+              onClose={() => setSelectedProject(null)} 
+            />
+          )}
+        </div>
+      
     </LanguageProvider>
   );
 }

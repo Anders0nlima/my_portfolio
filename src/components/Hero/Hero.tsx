@@ -1,33 +1,18 @@
+import { useNavigate } from 'react-router-dom'; // Importamos o hook de navegação
 import { useLanguage } from '../../context/LanguageContext';
 import styles from './Hero.module.css';
 
 const Hero = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate(); // Inicializamos o navegador
 
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects');
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+  // Substituímos o scroll manual pelo redirecionamento de rota
+  const handleViewProjects = () => {
+    navigate('/projects');
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+  const handleGetInTouch = () => {
+    navigate('/contact');
   };
 
   return (
@@ -97,7 +82,8 @@ const Hero = () => {
         </p>
 
         <div className={styles.actions}>
-          <button onClick={scrollToProjects} className={styles.primaryBtn}>
+          {/* Botões agora chamam as funções de navegação */}
+          <button onClick={handleViewProjects} className={styles.primaryBtn}>
             <span>{t('hero.viewProjects')}</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -105,7 +91,7 @@ const Hero = () => {
             </svg>
           </button>
           
-          <button onClick={scrollToContact} className={styles.secondaryBtn}>
+          <button onClick={handleGetInTouch} className={styles.secondaryBtn}>
             {t('hero.getInTouch')}
           </button>
         </div>

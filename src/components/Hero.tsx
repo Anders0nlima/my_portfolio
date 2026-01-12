@@ -1,44 +1,28 @@
 import { ArrowRight, BarChart3, Database, TrendingUp } from 'lucide-react';
+import { useNavigate } from 'react-router-dom'; // 1. Importe o useNavigate
 import { useLanguage } from '../context/LanguageContext';
 
 export function Hero() {
   const { t } = useLanguage();
+  const navigate = useNavigate(); // 2. Inicialize o hook de navegação
 
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects');
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+  // 3. Troque as funções de scroll por navegação de rota
+  const handleViewProjects = () => {
+    navigate('/projects'); // Vai para a página de projetos
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+  const handleGetInTouch = () => {
+    navigate('/contact'); // Vai para a página de contato
   };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Data visualization background */}
+      {/* Background e Visualizações (Mantidos pois são o charme da Landing Page) */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 border border-cyan-500 rounded-xl rotate-12"></div>
         <div className="absolute bottom-20 right-10 w-80 h-80 border border-blue-500 rounded-xl -rotate-6"></div>
         <div className="absolute top-1/2 left-1/4 w-48 h-48 border border-cyan-400 rounded-full"></div>
         
-        {/* Abstract data points */}
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -92,7 +76,7 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button 
-            onClick={scrollToProjects}
+            onClick={handleViewProjects} // Função de navegação
             className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-xl hover:from-cyan-600 hover:to-blue-700 transition-all shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 hover:scale-105"
           >
             <span className="font-semibold">{t('hero.viewProjects')}</span>
@@ -100,7 +84,7 @@ export function Hero() {
           </button>
           
           <button 
-            onClick={scrollToContact}
+            onClick={handleGetInTouch} // Função de navegação
             className="px-8 py-4 border-2 border-cyan-500/50 text-cyan-400 rounded-xl hover:bg-cyan-500/10 transition-all hover:border-cyan-500"
           >
             {t('hero.getInTouch')}
