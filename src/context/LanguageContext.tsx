@@ -48,10 +48,10 @@ const translations = {
       downloadCV: 'Download CV'
     },
     hero: {
-      badge: 'Data Analyst & Web Developer',
-      headline1: 'Turning Data into',
-      headline2: 'Decisions',
-      subheadline: 'Information Systems specialist transforming complex datasets into actionable insights through advanced analytics, machine learning, and interactive web applications.',
+      badge: '-------',
+      headline1: 'Web Development &',
+      headline2: 'Data Analysis Student',
+      subheadline: 'Information Systems student focused on web development and data analysis. I build interactive web applications and data dashboards using React, Vite, JavaScript, TypeScript, Power BI, and Excel, transforming raw data into clear insights and practical solutions.',
       viewProjects: 'View Projects',
       getInTouch: 'Get in Touch',
       stats: {
@@ -220,10 +220,10 @@ const translations = {
       downloadCV: 'Baixar CV'
     },
     hero: {
-      badge: 'Analista de Dados & Desenvolvedor Web',
-      headline1: 'Transformando Dados em',
-      headline2: 'Decisões',
-      subheadline: 'Especialista em Sistemas de Informação transformando conjuntos de dados complexos em insights acionáveis por meio de análise avançada, aprendizado de máquina e aplicações web interativas.',
+      badge: '-------',
+      headline1: 'Desenvolvedor Web e',
+      headline2: 'Estudante de Análise de Dados.',
+      subheadline: 'Estudante de Sistemas de Informação com foco em desenvolvimento web e análise de dados. Crio aplicações web interativas e dashboards de dados usando React, Vite, JavaScript, TypeScript, Power BI e Excel, transformando dados brutos em insights claros e soluções práticas.',
       viewProjects: 'Ver Projetos',
       getInTouch: 'Entre em Contato',
       stats: {
@@ -392,10 +392,10 @@ const translations = {
       downloadCV: 'Télécharger CV'
     },
     hero: {
-      badge: 'Analyste de Données & Développeur Web',
-      headline1: 'Transformer les Données en',
-      headline2: 'Décisions',
-      subheadline: 'Spécialiste des systèmes d\'information transformant des ensembles de données complexes en informations exploitables grâce à l\'analyse avancée, l\'apprentissage automatique et les applications web interactives.',
+      badge: '-------',
+      headline1: 'Développeur Web et',
+      headline2: 'Étudiant en Analyse de Données',
+      subheadline: 'Étudiant en systèmes d\'information, spécialisé en développement web et analyse de données. Je crée des applications web interactives et des tableaux de bord de données à l\'aide de React, Vite, JavaScript, TypeScript, Power BI et Excel, transformant ainsi les données brutes en informations claires et en solutions concrètes.',
       viewProjects: 'Voir les Projets',
       getInTouch: 'Me Contacter',
       stats: {
