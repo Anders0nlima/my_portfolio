@@ -13,20 +13,36 @@ import CaseStudyModal from './components/CaseStudyModal/CaseStudyModal';
 import NotFound from './components/NotFound/NotFound';
 // import PageLoader from './components/PageLoader/PageLoader'; // LOADING (desativado)
 
+import WebProjectReadme from './components/pages/WebProjectReadme/WebProjectReadme';
+
 import styles from './App.module.css';
 
 /* ================= TYPES ================= */
 
 export interface Project {
-  id: number;
+id: number;
   title: string;
   description: string;
   image: string;
   tags: string[];
-  problem: string;
-  process: string;
-  result: string;
-  chartImages: string[];
+
+  // ===== Tipo do projeto =====
+  type?: 'data' | 'web';
+
+  // ===== Data projects (modelo atual – NÃO alterado)
+  problem?: string;
+  process?: string;
+  result?: string;
+  chartImages?: string[];
+
+  // ===== Web projects (modelo novo)
+  readme?: string;
+  githubUrl?: string;
+  liveUrl?: string;
+  components?: {
+    name: string;
+    image: string;
+  }[];
 }
 
 /* ================= SCROLL RESET ================= */
@@ -91,13 +107,11 @@ function App() {
             <Route
               path="/projects"
               element={
-                <Projects
-                  onProjectClick={setSelectedProject}
-                  projectImages={projectImages}
-                />
+                <Projects onProjectClick={setSelectedProject}/>
               }
             />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/projects/web/:id" element={<WebProjectReadme />}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

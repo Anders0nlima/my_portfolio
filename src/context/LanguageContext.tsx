@@ -137,45 +137,66 @@ const translations = {
       },
       techStack: 'Stacks'
     },
-    projects: {
-      title: 'Featured Projects',
-      subtitle: 'Explore case studies showcasing data-driven solutions and their measurable impact',
-      viewCaseStudy: 'View Case Study',
-      projects: [
-        {
-          title: 'E-Commerce Sales Analytics Dashboard',
-          description: 'Built an interactive Power BI dashboard tracking 50K+ transactions, revealing seasonal trends and customer segments.',
-          tags: ['Python', 'Power BI', 'SQL'],
-          problem: 'The company had fragmented sales data across multiple systems, making it impossible to identify key performance drivers and seasonal patterns.',
-          process: 'Cleaned and normalized 50K+ transaction records using Python/Pandas, designed a star schema database in SQL, and created an ETL pipeline. Built interactive visualizations in Power BI with drill-down capabilities.',
-          result: 'Identified 3 high-value customer segments accounting for 65% of revenue, discovered a 40% sales spike during Q4, and enabled data-driven inventory planning that reduced stockouts by 28%.'
-        },
-        {
-          title: 'Customer Churn Prediction Model',
-          description: 'Developed a machine learning model to predict customer churn with 87% accuracy, enabling proactive retention strategies.',
-          tags: ['Python', 'Scikit-learn', 'Pandas'],
-          problem: 'High customer churn rates were impacting revenue, but the company had no way to identify at-risk customers before they left.',
-          process: 'Performed exploratory data analysis on 10K+ customer records, engineered 15 behavioral features, and trained multiple models (Logistic Regression, Random Forest, XGBoost). Fine-tuned hyperparameters using cross-validation.',
-          result: 'Achieved 87% prediction accuracy with Random Forest. The model identified top churn drivers: low engagement and lack of recent purchases. Implementation led to a 15% reduction in churn within 3 months.'
-        },
-        {
-          title: 'Real-Time Analytics Web App',
-          description: 'Created a full-stack React dashboard with live data streaming, allowing teams to monitor KPIs in real-time.',
-          tags: ['React', 'Node.js', 'Recharts'],
-          problem: 'Teams were making decisions based on outdated reports that were generated weekly, missing critical real-time opportunities.',
-          process: 'Built a React frontend with Recharts for dynamic visualizations, developed a Node.js backend API, and implemented WebSocket connections for live data streaming. Optimized database queries for sub-second response times.',
-          result: 'Reduced decision-making lag from 7 days to real-time. Teams could instantly spot anomalies and trends, leading to 23% faster response to market changes and improved operational efficiency.'
-        },
-        {
-          title: 'Supply Chain Optimization Analysis',
-          description: 'Analyzed logistics data to optimize delivery routes and reduce operational costs by 18% using data-driven insights.',
-          tags: ['Python', 'SQL', 'Tableau'],
-          problem: 'Inefficient delivery routes and warehouse placement were causing high operational costs and delayed deliveries.',
-          process: 'Extracted and cleaned 6 months of logistics data using SQL, performed geospatial analysis in Python, and created route optimization models. Built Tableau dashboards to visualize inefficiencies and recommendations.',
-          result: 'Identified 12 suboptimal routes and recommended 3 new warehouse locations. Implementation reduced delivery times by 22% and cut operational costs by 18%, saving $450K annually.'
-        }
-      ]
+projects: {
+  title: 'Featured Projects',
+  subtitle: 'Explore case studies showcasing data-driven solutions and their measurable impact',
+
+  // 🔧 BOTÕES / AÇÕES
+  viewCaseStudy: 'View Case Study',
+  viewReadme: 'View README',
+  viewLive: 'Live Demo',
+
+  projects: [
+    {
+      title: 'E-Commerce Sales Analytics Dashboard',
+      description:
+        'Built an interactive Power BI dashboard tracking 50K+ transactions, revealing seasonal trends and customer segments.',
+      tags: ['Python', 'Power BI', 'SQL'],
+      problem:
+        'The company had fragmented sales data across multiple systems, making it impossible to identify key performance drivers and seasonal patterns.',
+      process:
+        'Cleaned and normalized 50K+ transaction records using Python/Pandas, designed a star schema database in SQL, and created an ETL pipeline. Built interactive visualizations in Power BI with drill-down capabilities.',
+      result:
+        'Identified 3 high-value customer segments accounting for 65% of revenue, discovered a 40% sales spike during Q4, and enabled data-driven inventory planning that reduced stockouts by 28%.',
     },
+    {
+      title: 'Customer Churn Prediction Model',
+      description:
+        'Developed a machine learning model to predict customer churn with 87% accuracy, enabling proactive retention strategies.',
+      tags: ['Python', 'Scikit-learn', 'Pandas'],
+      problem:
+        'High customer churn rates were impacting revenue, but the company had no way to identify at-risk customers before they left.',
+      process:
+        'Performed exploratory data analysis on 10K+ customer records, engineered 15 behavioral features, and trained multiple models (Logistic Regression, Random Forest, XGBoost). Fine-tuned hyperparameters using cross-validation.',
+      result:
+        'Achieved 87% prediction accuracy with Random Forest. The model identified top churn drivers: low engagement and lack of recent purchases. Implementation led to a 15% reduction in churn within 3 months.',
+    },
+    {
+      title: 'Real-Time Analytics Web App',
+      description:
+        'Created a full-stack React dashboard with live data streaming, allowing teams to monitor KPIs in real-time.',
+      tags: ['React', 'Node.js', 'Recharts'],
+      problem:
+        'Teams were making decisions based on outdated reports that were generated weekly, missing critical real-time opportunities.',
+      process:
+        'Built a React frontend with Recharts for dynamic visualizations, developed a Node.js backend API, and implemented WebSocket connections for live data streaming. Optimized database queries for sub-second response times.',
+      result:
+        'Reduced decision-making lag from 7 days to real-time. Teams could instantly spot anomalies and trends, leading to 23% faster response to market changes and improved operational efficiency.',
+    },
+    {
+      title: 'Supply Chain Optimization Analysis',
+      description:
+        'Analyzed logistics data to optimize delivery routes and reduce operational costs by 18% using data-driven insights.',
+      tags: ['Python', 'SQL', 'Tableau'],
+      problem:
+        'Inefficient delivery routes and warehouse placement were causing high operational costs and delayed deliveries.',
+      process:
+        'Extracted and cleaned 6 months of logistics data using SQL, performed geospatial analysis in Python, and created route optimization models. Built Tableau dashboards to visualize inefficiencies and recommendations.',
+      result:
+        'Identified 12 suboptimal routes and recommended 3 new warehouse locations. Implementation reduced delivery times by 22% and cut operational costs by 18%, saving $450K annually.',
+    },
+  ],
+},
     caseStudy: {
       problem: 'The Problem',
       process: 'The Data Process',

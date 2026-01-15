@@ -1,0 +1,70 @@
+.readme {
+  padding: 96px 24px;
+  background: linear-gradient(to bottom, #0a0a0a, #121212);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.description {
+  color: #9ca3af;
+  margin-top: 12px;
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.githubBtn,
+.liveBtn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.githubBtn {
+  background: #1f2933;
+  color: white;
+}
+
+.liveBtn {
+  background: linear-gradient(to right, #06b6d4, #3b82f6);
+  color: white;
+}
+
+.section {
+  margin-top: 64px;
+}
+
+.componentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.componentCard {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.componentCard img {
+  width: 100%;
+  border-radius: 8px;
+}
