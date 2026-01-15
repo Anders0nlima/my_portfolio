@@ -63,11 +63,11 @@ const translations = {
     about: {
       title: 'About Me',
       bio: {
-        p1: "I'm a data-driven professional with a passion for uncovering insights hidden within complex datasets. With a background in Information Systems, I bridge the gap between raw data and strategic business decisions.",
-        p2: "My expertise spans across data analysis, statistical modeling, machine learning, and full-stack web development. I specialize in building end-to-end solutions—from data extraction and cleaning to creating interactive dashboards and predictive models.",
-        p3: "Whether it's identifying customer behavior patterns, optimizing business processes, or developing real-time analytics platforms, I transform data into actionable intelligence that drives measurable results.",
-        available: 'Available for Projects',
-        experience: '5+ Years Experience'
+        p1: "I am an Information Systems student at UFPA with a strong interest in technology and problem-solving. I have been studying web development since high school, which gave me a solid foundation in building applications and understanding how systems work end to end.",
+        p2: "My main stack includes JavaScript and TypeScript for modern web development, and I am also expanding my skills in Java and Python. This journey naturally led me to explore the data field, where I combine programming logic with data analysis and visualization.",
+        p3: "In addition to programming, I study English and French, which helps me access international content, collaborate in diverse environments, and prepare for global opportunities. I am constantly learning and improving, seeking to build solutions that are both technically solid and meaningful in real-world scenarios.",
+        available: 'Open to Opportunities',
+        experience: 'Student & Continuous Learner'
       },
       experience: {
         title: 'Experience & Background',
@@ -135,7 +135,7 @@ const translations = {
           }
         ]
       },
-      techStack: 'Tech Stack'
+      techStack: 'Stacks'
     },
     projects: {
       title: 'Featured Projects',
@@ -235,11 +235,11 @@ const translations = {
     about: {
       title: 'Sobre Mim',
       bio: {
-        p1: 'Sou um profissional orientado por dados com paixão por descobrir insights ocultos em conjuntos de dados complexos. Com formação em Sistemas de Informação, faço a ponte entre dados brutos e decisões estratégicas de negócios.',
-        p2: 'Minha experiência abrange análise de dados, modelagem estatística, aprendizado de máquina e desenvolvimento web full-stack. Especializo-me em construir soluções completas—desde extração e limpeza de dados até criação de dashboards interativos e modelos preditivos.',
-        p3: 'Seja identificando padrões de comportamento do cliente, otimizando processos de negócios ou desenvolvendo plataformas de análise em tempo real, transformo dados em inteligência acionável que gera resultados mensuráveis.',
-        available: 'Disponível para Projetos',
-        experience: '5+ Anos de Experiência'
+        p1: 'Sou estudante de Sistemas de Informação pela UFPA, com grande interesse em tecnologia e resolução de problemas. Estudo desenvolvimento web desde o ensino médio, o que me proporcionou uma base sólida na criação de aplicações e na compreensão de sistemas de ponta a ponta.',
+        p2: 'Meu principal conjunto de tecnologias envolve JavaScript e TypeScript para o desenvolvimento web moderno, além de estar expandindo meus conhecimentos em Java e Python. Esse percurso me levou naturalmente a me aprofundar na área de dados, unindo lógica de programação com análise e visualização de informações.',
+        p3: 'Além da programação, estudo inglês e francês, o que me permite acessar conteúdos internacionais, colaborar em ambientes diversos e me preparar para oportunidades globais. Estou em constante aprendizado, buscando desenvolver soluções tecnicamente sólidas e relevantes para problemas do mundo real.',
+        available: 'Aberto a Oportunidades',
+        experience: 'Estudante & Aprendizado Contínuo'
       },
       experience: {
         title: 'Experiência e Formação',
@@ -307,7 +307,7 @@ const translations = {
           }
         ]
       },
-      techStack: 'Stack Tecnológico'
+      techStack: 'Stacks'
     },
     projects: {
       title: 'Projetos em Destaque',
@@ -407,11 +407,11 @@ const translations = {
     about: {
       title: 'À Propos de Moi',
       bio: {
-        p1: 'Je suis un professionnel axé sur les données avec une passion pour découvrir les informations cachées dans les ensembles de données complexes. Avec une formation en systèmes d\'information, je fais le lien entre les données brutes et les décisions stratégiques d\'entreprise.',
-        p2: 'Mon expertise couvre l\'analyse de données, la modélisation statistique, l\'apprentissage automatique et le développement web full-stack. Je me spécialise dans la construction de solutions de bout en bout—de l\'extraction et du nettoyage de données à la création de tableaux de bord interactifs et de modèles prédictifs.',
-        p3: 'Qu\'il s\'agisse d\'identifier les modèles de comportement des clients, d\'optimiser les processus métier ou de développer des plateformes d\'analyse en temps réel, je transforme les données en intelligence exploitable qui génère des résultats mesurables.',
-        available: 'Disponible pour Projets',
-        experience: '5+ Ans d\'Expérience'
+        p1: 'Je suis étudiant en Systèmes d\'Information à l\'UFPA, avec un fort intérêt pour la technologie et la résolution de problèmes. J\'étudie le développement web depuis le lycée, ce qui m\'a permis d\'acquérir une base solide dans la création d\'applications et la compréhension des systèmes de bout en bout.',
+        p2: 'Mon stack principal comprend JavaScript et TypeScript pour le développement web moderne, et j\'élargis également mes compétences en Java et Python. Ce parcours m\'a naturellement conduit à m\'intéresser au domaine des données, en combinant la logique de programmation avec l\'analyse et la visualisation des données.',
+        p3: 'En plus de la programmation, j\'étudie l\'anglais et le français, ce qui me permet d\'accéder à des contenus internationaux, de collaborer dans des environnements variés et de me préparer à des opportunités globales. Je suis en apprentissage constant, avec pour objectif de créer des solutions techniquement solides et utiles dans des contextes réels.',
+        available: 'Ouvert aux Opportunités',
+        experience: 'Étudiant & Apprentissage Continu'
       },
       experience: {
         title: 'Expérience et Formation',
@@ -479,7 +479,7 @@ const translations = {
           }
         ]
       },
-      techStack: 'Stack Technologique'
+      techStack: 'Stacks'
     },
     projects: {
       title: 'Projets Phares',

@@ -1,6 +1,20 @@
 import { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import styles from './About.module.css';
+import {FaReact, FaGitAlt, FaNodeJs, FaJava} from 'react-icons/fa';
+import {
+  SiVite,
+  SiNextdotjs,
+  SiJavascript,
+  SiTypescript,
+  SiSpringboot,
+  SiPython,
+  SiPandas,
+  SiPostgresql,
+  SiExpress,
+  SiAlwaysdata,
+  SiMysql,
+} from 'react-icons/si';
 
 type ExperienceTab = 'professional' | 'academic' | 'volunteer';
 
@@ -16,12 +30,28 @@ const About = () => {
   const [activeTab, setActiveTab] = useState<ExperienceTab>('professional');
 
   const techStack = [
-    { name: 'Python' },
-    { name: 'SQL' },
-    { name: 'React' },
-    { name: 'Power BI' },
-    { name: 'Pandas' },
-    { name: 'Machine Learning' }
+// 🌐 Web
+  { name: 'React', icon: FaReact },
+  { name: 'Vite', icon: SiVite },
+  { name: 'Next.js', icon: SiNextdotjs },
+  { name: 'JavaScript', icon: SiJavascript },
+  { name: 'TypeScript', icon: SiTypescript },
+  { name: 'Node.js', icon: FaNodeJs },
+  { name: 'Express', icon: SiExpress },
+
+  // 📊 Dados
+  { name: 'Python', icon: SiPython },
+  { name: 'Pandas', icon: SiPandas },
+  { name: 'Power BI', icon: SiAlwaysdata },
+
+  // 🗄️ Banco de Dados
+  { name: 'PostgreSQL', icon: SiPostgresql },
+  { name: 'SQL', icon: SiMysql },
+
+  // ⚙️ Outros
+  { name: 'Java', icon: FaJava },
+  { name: 'Spring Boot', icon: SiSpringboot },
+  { name: 'Git', icon: FaGitAlt },
   ];
 
   const tabs: { key: ExperienceTab; label: string; icon: string }[] = [
@@ -121,13 +151,7 @@ const About = () => {
             {techStack.map((tech, index) => (
               <div key={index} className={styles.techCard}>
                 <div className={styles.techIcon}>
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    {index % 2 === 0 ? (
-                      <polyline points="16 18 22 12 16 6"></polyline>
-                    ) : (
-                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                    )}
-                  </svg>
+                  <tech.icon size={32} />
                 </div>
                 <span className={styles.techName}>{tech.name}</span>
               </div>
@@ -135,7 +159,7 @@ const About = () => {
           </div>
 
           <div className={styles.additionalSkills}>
-            {['Tableau', 'NumPy', 'Scikit-learn', 'Node.js', 'Git', 'Excel'].map((skill, index) => (
+            {['lottiefiles', 'shadcn/ui', 'Tableau', 'NumPy', 'Figma', 'Excel'].map((skill, index) => (
               <span key={index} className={styles.skillBadge}>
                 {skill}
               </span>

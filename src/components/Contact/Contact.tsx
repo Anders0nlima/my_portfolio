@@ -4,22 +4,47 @@ import styles from './Contact.module.css';
 
 const Contact = () => {
   const { t } = useLanguage();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
-  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitted(true);
-    
-    // Simulação de envio de formulário
-    setTimeout(() => {
-      setSubmitted(false);
+    setError(false);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mjggkeld', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao enviar');
+      }
+
+      // Sucesso
       setFormData({ name: '', email: '', message: '' });
-    }, 3000);
+
+    } catch (err) {
+      setError(true);
+    } finally {
+      // Mantém o feedback visual por um tempo
+      setTimeout(() => {
+        setSubmitted(false);
+        setError(false);
+      }, 2500);
+    }
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -30,7 +55,6 @@ const Contact = () => {
   };
 
   return (
-    /* Removido o id="contact" pois agora é uma página acessada via rota */
     <section className={styles.contact}>
       <div className={styles.container}>
         <div className={styles.header}>
@@ -99,10 +123,20 @@ const Contact = () => {
               >
                 {submitted ? (
                   <>
-                    <span>{t('contact.form.sent')}</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                    <span>
+                      {error
+                        ? t('contact.form.error') ?? 'Erro ao enviar'
+                        : t('contact.form.sent')}
+                    </span>
+                    {!error && (
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    )}
                   </>
                 ) : (
                   <>
@@ -117,15 +151,16 @@ const Contact = () => {
             </form>
           </div>
 
+          {/* Parte direita (info + redes) permanece IGUAL */}
           <div className={styles.infoContainer}>
-            <div>
+                        <div>
               <h3 className={styles.infoTitle}>{t('contact.connect')}</h3>
               <p className={styles.infoDesc}>{t('contact.connectDesc')}</p>
             </div>
 
             <div className={styles.socialLinks}>
               {/* Ajuste os links abaixo com seus dados reais */}
-              <a href="mailto:seu-email@dominio.com" className={styles.socialCard}>
+              <a href="mailto:andersoncon85@gmail.com" className={styles.socialCard}>
                 <div className={styles.socialIcon} style={{ backgroundColor: 'rgba(6, 182, 212, 0.1)', borderColor: 'rgba(6, 182, 212, 0.2)' }}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06b6d4">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -134,11 +169,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className={styles.socialLabel}>{t('contact.social.email')}</div>
-                  <div className={styles.socialValue}>seu-email@dominio.com</div>
+                  <div className={styles.socialValue}>andersoncon85@gmail.com</div>
                 </div>
               </a>
 
-              <a href="https://linkedin.com/in/seuperfil" target="_blank" rel="noopener noreferrer" className={styles.socialCard}>
+              <a href="https://www.linkedin.com/in/anderson-lima-fulldev/" target="_blank" rel="noopener noreferrer" className={styles.socialCard}>
                 <div className={styles.socialIcon} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', borderColor: 'rgba(59, 130, 246, 0.2)' }}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -148,11 +183,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className={styles.socialLabel}>{t('contact.social.linkedin')}</div>
-                  <div className={styles.socialValue}>linkedin.com/in/seuperfil</div>
+                  <div className={styles.socialValue}>linkedin.com/in/anderson-lima-fulldev/</div>
                 </div>
               </a>
 
-              <a href="https://github.com/seugithub" target="_blank" rel="noopener noreferrer" className={styles.socialCard}>
+              <a href="https://github.com/Anders0nlima/" target="_blank" rel="noopener noreferrer" className={styles.socialCard}>
                 <div className={styles.socialIcon} style={{ backgroundColor: 'rgba(107, 114, 128, 0.1)', borderColor: 'rgba(107, 114, 128, 0.2)' }}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9ca3af">
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -160,7 +195,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className={styles.socialLabel}>{t('contact.social.github')}</div>
-                  <div className={styles.socialValue}>github.com/seugithub</div>
+                  <div className={styles.socialValue}>github.com/Anders0nlima/</div>
                 </div>
               </a>
             </div>
