@@ -8,6 +8,17 @@ import ptIcon from '../../assets/icons/brazil-flag_3909370.png';
 import frIcon from '../../assets/icons/france_3909323.png';
 import enIcon from '../../assets/icons/united-kingdom_3909136.png';
 
+// CVs
+import cvPt from '../../assets/cv/cv-anderson-lima-pt.pdf';
+import cvEn from '../../assets/cv/cv-anderson-lima-en.pdf';
+import cvFr from '../../assets/cv/cv-anderson-lima-fr.pdf';
+
+const cvByLanguage: Record<Language, string> = {
+  pt: cvPt,
+  en: cvEn,
+  fr: cvFr,
+};
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showLangDropdown, setShowLangDropdown] = useState(false);
@@ -23,6 +34,15 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = cvByLanguage[language];
+    link.download = `Anderson_Lima_CV_${language.toUpperCase()}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const languages: {
     code: Language;
     label: string;
@@ -30,7 +50,7 @@ const Header = () => {
   }[] = [
     { code: 'en', label: 'English', icon: enIcon },
     { code: 'pt', label: 'Português', icon: ptIcon },
-    { code: 'fr', label: 'Français', icon: frIcon }
+    { code: 'fr', label: 'Français', icon: frIcon },
   ];
 
   const currentLang = languages.find(lang => lang.code === language);
@@ -129,8 +149,17 @@ const Header = () => {
             </div>
 
             {/* Download CV */}
-            <button className={styles.downloadBtn}>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <button
+              className={styles.downloadBtn}
+              onClick={handleDownloadCV}
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
