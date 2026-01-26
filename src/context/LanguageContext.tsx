@@ -76,56 +76,56 @@ const translations = {
         volunteer: 'Volunteer',
         professionalExp: [
           {
-            title: 'Senior Data Analyst',
-            company: 'TechCorp Solutions',
-            period: '2022 - Present',
-            description: 'Leading data analytics initiatives, building ML models for customer segmentation, and developing automated reporting dashboards using Power BI and Python.'
-          },
-          {
-            title: 'Full-Stack Developer',
-            company: 'Digital Innovations Inc.',
-            period: '2020 - 2022',
-            description: 'Developed responsive web applications using React and Node.js. Created real-time analytics platforms and integrated data visualization libraries for business intelligence.'
-          },
-          {
-            title: 'Junior Data Analyst',
-            company: 'Analytics Hub',
-            period: '2019 - 2020',
-            description: 'Performed data cleaning, exploratory analysis, and statistical modeling. Assisted in building SQL databases and creating automated ETL pipelines.'
-          }
+              title: 'TCCine Project',
+              company: 'Development for an audiovisual company',
+              period: '2025',
+              description: 'Development of an institutional website for production use, being my first project published in a real-world environment.'
+            },
+            {
+              title: 'Mental Calculation Project',
+              company: 'System developed for a mathematics teacher',
+              period: '2025',
+              description: 'First freelance project, developed to support educational activities, with a focus on logic and usability.'
+            },
+            {
+              title: 'Beauty Salon Project',
+              company: 'System under development for a company in the beauty sector',
+              period: '2026 - Present',
+              description: 'Project developed as part of the integrative project of the Bolsa Futuro Digital program, applying full-stack development concepts.'
+            }
         ],
         academicExp: [
           {
-            title: 'Master\'s Thesis: Predictive Analytics',
-            company: 'University of Technology',
-            period: '2023',
-            description: 'Developed a machine learning framework for predicting market trends using ensemble methods. Published findings in an academic journal with 87% accuracy rate.'
+            title: 'Undergraduate student in Information Systems',
+            company: 'Federal University of Pará',
+            period: '2025 - Present',
+            description: 'Academic training focused on software development, programming logic, databases, and fundamentals of information systems.'
           },
           {
-            title: 'Research Assistant - Data Science Lab',
-            company: 'University of Technology',
-            period: '2021 - 2022',
-            description: 'Conducted research on neural network optimization techniques. Collaborated on 3 published papers and presented findings at international conferences.'
+            title: 'Former scholarship holder of the Bolsa Futuro Digital program',
+            company: 'Apoti Academy',
+            period: '2025 - 2026',
+            description: 'Training program focused on backend development using Python, including programming practices, problem solving, and the development of collaboration and networking skills.'
           },
           {
-            title: 'Bachelor\'s in Information Systems',
-            company: 'University of Technology',
-            period: '2016 - 2020',
-            description: 'Specialized in database management, software engineering, and business analytics. Graduated with honors, GPA 3.8/4.0.'
+            title: 'Final Data Analysis Project',
+            company: 'Alura',
+            period: '2026',
+            description: 'Development of a final project in the Data Analysis Immersion course, deepening knowledge in data analysis, processing, and visualization with certification.'
           }
         ],
         volunteerExp: [
           {
-            title: 'Data Analytics Mentor',
-            company: 'Code for Good',
-            period: '2022 - Present',
-            description: 'Mentoring aspiring data analysts from underrepresented communities. Teaching Python, SQL, and data visualization best practices to 50+ students.'
+            title: 'Educational repositories',
+            company: 'Community and open learning',
+            period: '2024 - Present',
+            description: 'Creation of GitHub repositories focused on teaching practical web development concepts, such as website deployment, full-stack fundamentals, and good coding practices.'
           },
           {
-            title: 'Web Development Trainer',
-            company: 'Tech4All Foundation',
-            period: '2021 - Present',
-            description: 'Conducting free web development workshops for non-profit organizations. Helped 10+ NGOs build their online presence and digital tools.'
+            title: 'Open Source project contributions',
+            company: 'Collaboration with the tech community',
+            period: '2026 - Present',
+            description: 'Contribution to open source projects, working on code improvements, bug fixes, and the evolution of community-oriented features.'
           },
           {
             title: 'Open Source Contributor',
@@ -269,56 +269,56 @@ projects: {
         volunteer: 'Voluntariado',
         professionalExp: [
           {
-            title: 'Analista de Dados Sênior',
-            company: 'TechCorp Solutions',
-            period: '2022 - Presente',
-            description: 'Liderando iniciativas de análise de dados, construindo modelos de ML para segmentação de clientes e desenvolvendo dashboards de relatórios automatizados usando Power BI e Python.'
+            title: 'Projeto TCCine',
+            company: 'Desenvolvimento para empresa de audiovisual',
+            period: '2025',
+            description: 'Desenvolvimento de website institucional destinado à produção, sendo meu primeiro projeto publicado em ambiente real.'
           },
           {
-            title: 'Desenvolvedor Full-Stack',
-            company: 'Digital Innovations Inc.',
-            period: '2020 - 2022',
-            description: 'Desenvolvi aplicações web responsivas usando React e Node.js. Criei plataformas de análise em tempo real e integrei bibliotecas de visualização de dados para business intelligence.'
+            title: 'Projeto Mental Calculation',
+            company: 'Sistema desenvolvido para um professor de matemática',
+            period: '2025',
+            description: 'Primeiro projeto freelancer, desenvolvido para apoiar atividades educacionais, com foco em lógica e usabilidade.'
           },
           {
-            title: 'Analista de Dados Júnior',
-            company: 'Analytics Hub',
-            period: '2019 - 2020',
-            description: 'Realizei limpeza de dados, análise exploratória e modelagem estatística. Auxiliei na construção de bancos de dados SQL e criação de pipelines ETL automatizados.'
+            title: 'Projeto Salão de Beleza',
+            company: 'Sistema em desenvolvimento para empresa do setor de beleza',
+            period: '2026 - presente',
+            description: 'Projeto desenvolvido como parte do projeto integrador do programa Bolsa Futuro Digital, aplicando conceitos de desenvolvimento full stack.'
           }
         ],
         academicExp: [
           {
-            title: 'Tese de Mestrado: Análise Preditiva',
-            company: 'Universidade de Tecnologia',
-            period: '2023',
-            description: 'Desenvolvi um framework de aprendizado de máquina para prever tendências de mercado usando métodos ensemble. Publiquei descobertas em revista acadêmica com taxa de precisão de 87%.'
+            title: 'Graduando em Sistemas de Informação',
+            company: 'Universidade Federal do Pará',
+            period: '2025 - Presente',
+            description: 'Formação acadêmica com foco em desenvolvimento de software, lógica de programação, banco de dados e fundamentos de sistemas de informação.'
           },
           {
-            title: 'Assistente de Pesquisa - Lab de Ciência de Dados',
-            company: 'Universidade de Tecnologia',
-            period: '2021 - 2022',
-            description: 'Conduzi pesquisas sobre técnicas de otimização de redes neurais. Colaborei em 3 artigos publicados e apresentei descobertas em conferências internacionais.'
+            title: 'Ex-bolsista do programa Bolsa Futuro Digital',
+            company: 'Apoti Academy',
+            period: '2025 - 2026',
+            description: 'Programa de formação com foco em desenvolvimento backend utilizando Python, incluindo práticas de programação, resolução de problemas e desenvolvimento de habilidades de colaboração e networking.'
           },
           {
-            title: 'Bacharelado em Sistemas de Informação',
-            company: 'Universidade de Tecnologia',
-            period: '2016 - 2020',
-            description: 'Especialização em gerenciamento de banco de dados, engenharia de software e análise de negócios. Formado com honras, média 3.8/4.0.'
+            title: 'Projeto final de Análise de Dados',
+            company: 'Alura',
+            period: '2026',
+            description: 'Desenvolvimento de projeto final no curso de Imersão em Análise de Dados, aprofundando conhecimentos em análise, tratamento e visualização de dados com certificação.'
           }
         ],
         volunteerExp: [
           {
-            title: 'Mentor de Análise de Dados',
-            company: 'Code for Good',
-            period: '2022 - Presente',
-            description: 'Mentoria de aspirantes a analistas de dados de comunidades sub-representadas. Ensinando Python, SQL e melhores práticas de visualização de dados para mais de 50 alunos.'
+            title: 'Repositórios educacionais',
+            company: 'Comunidade e aprendizado aberto',
+            period: '2024 - Presente',
+            description: 'Criação de repositórios no GitHub voltados ao ensino de conceitos práticos de desenvolvimento web, como publicação de sites, fundamentos de full stack e boas práticas de código.'
           },
           {
-            title: 'Instrutor de Desenvolvimento Web',
-            company: 'Tech4All Foundation',
-            period: '2021 - Presente',
-            description: 'Conduzindo workshops gratuitos de desenvolvimento web para organizações sem fins lucrativos. Ajudei mais de 10 ONGs a construir sua presença online e ferramentas digitais.'
+            title: 'Contribuições em projetos Open Source',
+            company: 'Colaboração com a comunidade tech',
+            period: '2026 - Presente',
+            description: 'Contribuição em projetos open source, atuando na melhoria de código, correção de problemas e evolução de funcionalidades voltadas à comunidade.'
           },
           {
             title: 'Contribuidor Open Source',
@@ -441,56 +441,56 @@ projects: {
         volunteer: 'Bénévolat',
         professionalExp: [
           {
-            title: 'Analyste de Données Senior',
-            company: 'TechCorp Solutions',
-            period: '2022 - Présent',
-            description: 'Direction des initiatives d\'analyse de données, construction de modèles ML pour la segmentation des clients et développement de tableaux de bord de reporting automatisés utilisant Power BI et Python.'
+            title: 'Projet TCCine',
+            company: 'Développement pour une entreprise audiovisuelle',
+            period: '2025',
+            description: 'Développement d’un site institutionnel destiné à la production, constituant mon premier projet publié dans un environnement réel.'
           },
           {
-            title: 'Développeur Full-Stack',
-            company: 'Digital Innovations Inc.',
-            period: '2020 - 2022',
-            description: 'Développement d\'applications web responsives utilisant React et Node.js. Création de plateformes d\'analyse en temps réel et intégration de bibliothèques de visualisation de données pour l\'intelligence d\'affaires.'
+            title: 'Projet Mental Calculation',
+            company: 'Système développé pour un professeur de mathématiques',
+            period: '2025',
+            description: 'Premier projet freelance, développé pour soutenir des activités éducatives, avec un accent sur la logique et l’ergonomie.'
           },
           {
-            title: 'Analyste de Données Junior',
-            company: 'Analytics Hub',
-            period: '2019 - 2020',
-            description: 'Nettoyage de données, analyse exploratoire et modélisation statistique. Assistance dans la construction de bases de données SQL et création de pipelines ETL automatisés.'
+            title: 'Projet Salon de Beauté',
+            company: 'Système en cours de développement pour une entreprise du secteur de la beauté',
+            period: '2026 - Présent',
+            description: 'Projet développé dans le cadre du projet intégrateur du programme Bolsa Futuro Digital, en appliquant des concepts de développement full stack.'
           }
         ],
         academicExp: [
           {
-            title: 'Thèse de Master: Analyse Prédictive',
-            company: 'Université de Technologie',
-            period: '2023',
-            description: 'Développement d\'un cadre d\'apprentissage automatique pour prédire les tendances du marché en utilisant des méthodes d\'ensemble. Publication des résultats dans une revue académique avec un taux de précision de 87%.'
+            title: 'Étudiant en systèmes d\'information',
+            company: 'Université Fédérale du Pará',
+            period: '2025 - Présent',
+            description: 'Formation académique axée sur le développement logiciel, la logique de programmation, les bases de données et les fondements des systèmes d\'information.'
           },
           {
-            title: 'Assistant de Recherche - Lab de Science des Données',
-            company: 'Université de Technologie',
-            period: '2021 - 2022',
-            description: 'Recherche sur les techniques d\'optimisation des réseaux neuronaux. Collaboration sur 3 articles publiés et présentation des résultats lors de conférences internationales.'
+            title: 'Ancien boursier du programme Bolsa Futuro Digital',
+            company: 'Apoti Academy',
+            period: '2025 - 2026',
+            description: 'Programme de formation axé sur le développement backend en Python, incluant des pratiques de programmation, la résolution de problèmes et le développement de compétences en collaboration et en réseautage.'
           },
           {
-            title: 'Licence en Systèmes d\'Information',
-            company: 'Université de Technologie',
-            period: '2016 - 2020',
-            description: 'Spécialisation en gestion de bases de données, ingénierie logicielle et analyse d\'affaires. Diplômé avec mention, moyenne 3.8/4.0.'
+            title: 'Projet final en analyse de données',
+            company: 'Alura',
+            period: '2026',
+            description: 'Réalisation d\'un projet final dans le cadre du cours d\'Immersion en Analyse de Données, approfondissant les connaissances en analyse, traitement et visualisation des données, avec certification.'
           }
         ],
         volunteerExp: [
           {
-            title: 'Mentor en Analyse de Données',
-            company: 'Code for Good',
-            period: '2022 - Présent',
-            description: 'Mentorat d\'aspirants analystes de données de communautés sous-représentées. Enseignement de Python, SQL et meilleures pratiques de visualisation de données à plus de 50 étudiants.'
+            title: 'Dépôts éducatifs',
+            company: 'Communauté et apprentissage ouvert',
+            period: '2024 - Présent',
+            description: 'Création de dépôts GitHub axés sur l\'enseignement de concepts pratiques du développement web, tels que la mise en ligne de sites, les bases du full stack et les bonnes pratiques de code.'
           },
           {
-            title: 'Formateur en Développement Web',
-            company: 'Tech4All Foundation',
-            period: '2021 - Présent',
-            description: 'Animation d\'ateliers gratuits de développement web pour organisations à but non lucratif. Aide à plus de 10 ONG pour construire leur présence en ligne et outils numériques.'
+            title: 'Contributions à des projets Open Source',
+            company: 'Collaboration avec la communauté tech',
+            period: '2026 - Présent',
+            description: 'Contribution à des projets open source, en travaillant sur l\'amélioration du code, la correction de problèmes et l\'évolution de fonctionnalités orientées vers la communauté.'
           },
           {
             title: 'Contributeur Open Source',

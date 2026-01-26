@@ -128,7 +128,7 @@ const About = () => {
           </div>
 
           <div className={styles.timeline}>
-            {getExperiences(activeTab).map((exp, index) => (
+            {getExperiences(activeTab).slice(0, activeTab === 'volunteer' ? 2 : undefined).map((exp, index) => ( //coloquei 2 cards para o voluntario
               <div key={index} className={styles.timelineItem}>
                 <div className={styles.timelineDot}></div>
 
