@@ -1,74 +1,81 @@
 import type { Project } from '../types/Project';
 
-import image1 from "../assets/imagens/pexels-bibekghosh-14553720.jpg";
-import image2 from "../assets/imagens/pexels-markusspiske-177598.jpg";
-import image3 from "../assets/imagens/pexels-matreding-6672293.jpg";
-import image4 from "../assets/imagens/pexels-sarah-blocksidge-69426152-13628541.jpg";
+import image1 from "../assets/imagens/tccine1.png"
+import image2 from "../assets/imagens/wilson2.png"
+import image3 from "../assets/imagens/pexels-matreding-6672293.jpg"
+import image4 from "../assets/imagens/pexels-sarah-blocksidge-69426152-13628541.jpg"
 
 export const projectsEn: Project[] = [
   {
     id: 1,
-    type: 'data',
-    title: 'Sales Performance Analysis',
-    description: 'Sales performance analysis using Power BI.',
+    title: 'TCCINE',
+    subtitle: 'Audiovisual website',
+    description: 'Audiovisual platform.',
     image: image1,
-    tags: ['Power BI', 'Excel', 'Data Analysis'],
-    problem: 'Decline in sales performance.',
-    process: 'Creation of KPIs and interactive dashboards.',
-    result: 'Improved decision-making.',
-    chartImages: ['/chart-1.png', '/chart-2.png'],
+    tags: ['React', 'JavaScript'],
+
+    readme: {
+      overview: 'TCCINE is a platform dedicated to connecting people with professionals and essential resources for audiovisual production. It is ideal for those seeking services such as video editing, sound effects, color grading, and other techniques that enhance the final work.',
+      process: 'The development of TCCINE was carried out using React with Vite, focusing on performance, code organization, and a strong user experience. Initially, an analysis of similar platforms was conducted, followed by a clear definition of the project structure, including routes, reusable components, and folder organization. The layout was inspired by modern interfaces aimed at the creative industry, with an emphasis on visual clarity and responsiveness. Throughout development, concepts such as componentization, separation of concerns, and front-end best practices were applied. Responsiveness was ensured through Media Queries, allowing use on both mobile devices and desktops. For user communication, the Formspree tool was integrated, enabling form submissions to be sent directly via email without the need for a dedicated backend. Finally, the project underwent visual and functional testing before being released to production.',
+      technologies: ['React', 'Vite', 'JavaScript'],
+      images: ['/screens/home.png', '/screens/projects.png'],
+    },
+
+    githubUrl: 'https://github.com/Anders0nlima/TC-cine',
+    liveUrl: 'https://anders0nlima.github.io/TC-cine/',
   },
   {
     id: 2,
-    type: 'data',
-    title: 'Customer Behavior Insights',
-    description: 'Customer behavior analysis.',
+    title: 'Wilson Hair',
+    subtitle: 'Appointment scheduling system for beauty salons',
+    description: 'Appointment scheduling system for beauty salons',
     image: image2,
-    tags: ['Tableau', 'SQL'],
-    problem: 'Low customer retention.',
-    process: 'Churn analysis.',
-    result: 'Increased customer retention.',
-    chartImages: ['/chart-3.png', '/chart-4.png'],
+    tags: ['React', 'TypeScript', 'JavaScript'],
+
+    readme: {
+      overview: 'Wilson Hair is a web-based appointment scheduling system developed to optimize service management in beauty salons. The platform was designed with three access levels — administrator, employee, and client — ensuring that each user can view and use only the functionalities corresponding to their profile, identified at the time of login.',
+      process: 'The project development followed a layered architecture, separating responsibilities among different user roles. The focus was on creating an intuitive and efficient interface, simplifying the booking process for clients, schedule management for employees, and overall system control for administrators. Special attention was also given to usability, responsiveness, and clarity of navigation flows.',
+      technologies: ['React', 'Vite', 'JavaScript', 'TypeScript', 'Vite', 'Figma (UI Design)'],
+      images: ['/screens/home.png', '/screens/projects.png'],
+    },
+
+    githubUrl: 'https://github.com/Anders0nlima/frontend-wilson',
+    liveUrl: '*',
   },
   {
     id: 3,
-    type: 'web',
-    title: 'Personal Portfolio',
-    description: 'Personal portfolio built with React.',
+    title: '[dados]',
+    subtitle: 'Site para salões',
+    description: 'Plataforma de agendamentos',
     image: image3,
-    tags: ['React', 'TypeScript'],
-    readme: `
-## About
-Personal portfolio project.
+    tags: ['React', 'JavaScript'],
 
-## Technologies
-- React
-- Vite
-- TypeScript
-    `,
-    githubUrl: 'https://github.com/seuusuario/portfolio',
-    liveUrl: 'https://seusite.com',
-    components: [
-      { name: 'Header', image: '/components/header.png' },
-      { name: 'Projects Grid', image: '/components/projects.png' },
-    ],
+    readme: {
+      overview: 'Portfólio audiovisual desenvolvido para apresentação de projetos.',
+      process: 'Desenvolvimento da interface e organização do conteúdo.',
+      technologies: ['React', 'Vite', 'TypeScript'],
+      images: ['/screens/home.png', '/screens/projects.png'],
+    },
+
+    githubUrl: 'https://github.com/Anders0nlima/TC-cine',
+    liveUrl: 'https://anders0nlima.github.io/TC-cine/',
   },
   {
     id: 4,
-    type: 'web',
-    title: 'Web Dashboard App',
-    description: 'Interactive web dashboard.',
+    title: 'Analise de Dados',
+    subtitle: 'Site audiovisual',
+    description: 'Plataforma audiovisual.',
     image: image4,
-    tags: ['React', 'Charts'],
-    readme: `
-## About
-Real-time dashboard application.
-    `,
-    githubUrl: 'https://github.com/seuusuario/dashboard',
-    liveUrl: 'https://dashboard.com',
-    components: [
-      { name: 'Sidebar', image: '/components/sidebar.png' },
-      { name: 'Charts', image: '/components/charts.png' },
-    ],
+    tags: ['React', 'JavaScript'],
+
+    readme: {
+      overview: 'Portfólio audiovisual desenvolvido para apresentação de projetos.',
+      process: 'Desenvolvimento da interface e organização do conteúdo.',
+      technologies: ['React', 'Vite', 'TypeScript'],
+      images: ['/screens/home.png', '/screens/projects.png'],
+    },
+
+    githubUrl: 'https://github.com/Anders0nlima/TC-cine',
+    liveUrl: 'https://anders0nlima.github.io/TC-cine/',
   },
 ];

@@ -1,7 +1,7 @@
 import { ExternalLink } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 // 'import type' resolve o erro de SyntaxError no Vite ao importar interfaces
-import type { Project } from '../App';
+import type { Project } from '../types/Project';
 
 interface ProjectsProps {
   onProjectClick: (project: Project) => void;

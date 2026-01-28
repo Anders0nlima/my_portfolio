@@ -198,10 +198,9 @@ projects: {
   ],
 },
     caseStudy: {
-      problem: 'The Problem',
-      process: 'The Data Process',
-      result: 'The Insight & Result',
-      impact: 'Impact: This project demonstrates the power of data-driven decision making in solving real-world business challenges and delivering measurable outcomes.',
+      overview: 'Overview',
+      process: 'Process',
+      technologies: 'Technologies',
       close: 'Close Case Study'
     },
     contact: {
@@ -370,10 +369,9 @@ projects: {
       ]
     },
     caseStudy: {
-      problem: 'O Problema',
-      process: 'O Processo de Dados',
-      result: 'O Insight e Resultado',
-      impact: 'Impacto: Este projeto demonstra o poder da tomada de decisão orientada por dados na resolução de desafios empresariais reais e entrega de resultados mensuráveis.',
+      overview: 'Visão Geral',
+      process: 'Processo',
+      technologies: 'Technologies',
       close: 'Fechar Estudo de Caso'
     },
     contact: {
@@ -542,10 +540,9 @@ projects: {
       ]
     },
     caseStudy: {
-      problem: 'Le Problème',
-      process: 'Le Processus de Données',
-      result: 'L\'Insight et le Résultat',
-      impact: 'Impact: Ce projet démontre le pouvoir de la prise de décision basée sur les données dans la résolution de défis commerciaux réels et la livraison de résultats mesurables.',
+      overview: 'Vue d’ensemble',
+      process: 'Processus',
+      technologies: 'Technologies',
       close: 'Fermer l\'Étude de Cas'
     },
     contact: {

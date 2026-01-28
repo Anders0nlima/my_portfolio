@@ -1,12 +1,14 @@
 import { useParams } from 'react-router-dom';
-import { projects } from '../../../data/projects.data';
+import { useProjects } from '../../../hooks/useProjects';
 import styles from './WebProjectReadme.module.css';
 
 const WebProjectReadme = () => {
   const { id } = useParams<{ id: string }>();
+  const projects = useProjects();
+
   const project = projects.find(p => p.id === Number(id));
 
-  if (!project || project.type !== 'web') {
+  if (!project || !project.readme) {
     return <p>Projeto não encontrado.</p>;
   }
 
@@ -16,27 +18,21 @@ const WebProjectReadme = () => {
       <p>{project.description}</p>
 
       <div className={styles.links}>
-        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
-        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-          Live Site
-        </a>
+        {project.githubUrl && (
+          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        )}
+        {project.liveUrl && (
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+            Live Site
+          </a>
+        )}
       </div>
 
       <article className={styles.content}>
-        <pre>{project.readme}</pre>
+        {project.readme.overview && <p>{project.readme.overview}</p>}
       </article>
-
-      <h2>Principais Componentes</h2>
-      <div className={styles.components}>
-        {project.components?.map((comp, index) => (
-          <div key={index}>
-            <img src={comp.image} alt={comp.name} />
-            <p>{comp.name}</p>
-          </div>
-        ))}
-      </div>
     </section>
   );
 };

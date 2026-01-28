@@ -14,36 +14,37 @@ import NotFound from './components/NotFound/NotFound';
 // import PageLoader from './components/PageLoader/PageLoader'; // LOADING (desativado)
 
 import WebProjectReadme from './components/pages/WebProjectReadme/WebProjectReadme';
+import type { Project } from './types/Project';
 
 import styles from './App.module.css';
 
 /* ================= TYPES ================= */
 
-export interface Project {
-id: number;
-  title: string;
-  description: string;
-  image: string;
-  tags: string[];
+//export interface Project {
+//id: number;
+//  title: string;
+//  description: string;
+//  image: string;
+//  tags: string[];
 
   // ===== Tipo do projeto =====
-  type?: 'data' | 'web';
+//  type?: 'data' | 'web';
 
   // ===== Data projects (modelo atual – NÃO alterado)
-  problem?: string;
-  process?: string;
-  result?: string;
-  chartImages?: string[];
+//  problem?: string;
+//  process?: string;
+//  result?: string;
+//  chartImages?: string[];
 
   // ===== Web projects (modelo novo)
-  readme?: string;
-  githubUrl?: string;
-  liveUrl?: string;
-  components?: {
-    name: string;
-    image: string;
-  }[];
-}
+//  readme?: string;
+//  githubUrl?: string;
+//  liveUrl?: string;
+//  components?: {
+//    name: string;
+//    image: string;
+//  }[];
+//}
 
 /* ================= SCROLL RESET ================= */
 
@@ -61,16 +62,16 @@ function ScrollToTop() {
 
 function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const location = useLocation();
+  //const location = useLocation();
 
   // const { loading, showLoader, hideLoader } = usePageLoading(); // LOADING (desativado)
 
-  const projectImages = [
-    '/project-dashboard-1.png',
-    '/project-analytics-2.png',
-    '/project-realtime-3.png',
-    '/project-supply-4.png',
-  ];
+  //const projectImages = [
+  //  '/project-dashboard-1.png',
+  //  '/project-analytics-2.png',
+  //  '/project-realtime-3.png',
+  //  '/project-supply-4.png',
+  //];
 
   /* ================= LOADING ENTRE ROTAS ================= */
   /*
@@ -111,7 +112,7 @@ function App() {
               }
             />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/projects/web/:id" element={<WebProjectReadme />}/>
+            <Route path="/projects/:id" element={<WebProjectReadme />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
