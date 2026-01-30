@@ -540,7 +540,7 @@ projects: {
       ]
     },
     caseStudy: {
-      overview: 'Vue d’ensemble',
+      overview: 'Vue d\'ensemble',
       process: 'Processus',
       technologies: 'Technologies',
       close: 'Fermer l\'Étude de Cas'

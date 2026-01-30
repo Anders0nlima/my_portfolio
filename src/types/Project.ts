@@ -1,3 +1,9 @@
+export type ProjectMedia = {
+  type: 'image' | 'video';
+  src: string;
+};
+
+
 export interface Project {
   id: number;
   title: string;
@@ -14,7 +20,7 @@ export interface Project {
     //result?: string;
     process: string;
     technologies: string[];
-    images?: string[];
+    images?: ProjectMedia[];
   };
 
   // ===== Optional links =====

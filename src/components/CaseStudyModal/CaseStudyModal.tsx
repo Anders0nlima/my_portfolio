@@ -150,13 +150,24 @@ const CaseStudyModal = ({ project, onClose }: CaseStudyModalProps) => {
           {project.readme?.images && project.readme.images.length > 0 && (
             <div className={styles.section}>
               <div className={styles.chartGrid}>
-                {project.readme.images.map((img, index) => (
+                {project.readme.images.map((media, index) => (
                   <div key={index} className={styles.chartContainer}>
-                    <img
-                      src={img}
-                      alt={`Project image ${index + 1}`}
-                      className={styles.chartImage}
-                    />
+                    {media.type === 'video' ? (
+                      <video
+                        src={media.src}
+                        className={styles.chartImage}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
+                    ) : (
+                      <img
+                        src={media.src}
+                        alt={`Project media ${index + 1}`}
+                        className={styles.chartImage}
+                      />
+                    )}
                   </div>
                 ))}
               </div>
