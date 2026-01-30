@@ -1,7 +1,7 @@
 import { X, Target, Cog, TrendingUp } from 'lucide-react';
 import { useEffect } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import type { Project } from '../App';
+import type { Project } from '../types/Project';
 
 interface CaseStudyModalProps {
   project: Project;
