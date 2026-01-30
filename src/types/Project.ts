@@ -15,12 +15,13 @@ export interface Project {
   // ===== README (page content) =====
   readme?: {
     overview?: string;
-    //problem?: string;
+    problem?: string;
     //process?: string;
-    //result?: string;
+    result?: string;
     process: string;
     technologies: string[];
     images?: ProjectMedia[];
+    chartImages?: string[];
   };
 
   // ===== Optional links =====

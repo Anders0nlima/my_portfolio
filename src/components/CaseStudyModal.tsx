@@ -81,7 +81,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
               <h3 className="text-2xl font-semibold text-white">{t('caseStudy.problem')}</h3>
             </div>
             <p className="text-lg text-gray-300 leading-relaxed pl-14">
-              {project.problem}
+              {project.readme?.problem}
             </p>
           </div>
 
@@ -94,13 +94,13 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
               <h3 className="text-2xl font-semibold text-white">{t('caseStudy.process')}</h3>
             </div>
             <p className="text-lg text-gray-300 leading-relaxed pl-14">
-              {project.process}
+              {project.readme?.problem}
             </p>
 
             {/* Process Images */}
-            {project.chartImages && project.chartImages.length > 0 && (
+            {project.readme?.chartImages && project.readme?.chartImages.length > 0 && (
               <div className="grid md:grid-cols-2 gap-4 pl-14 pt-4">
-                {project.chartImages.map((chartImage, index) => (
+                {project.readme?.chartImages.map((chartImage, index) => (
                   <div key={index} className="relative h-64 rounded-xl overflow-hidden border border-gray-800">
                     <img
                       src={chartImage}
@@ -122,7 +122,7 @@ export function CaseStudyModal({ project, onClose }: CaseStudyModalProps) {
               <h3 className="text-2xl font-semibold text-white">{t('caseStudy.result')}</h3>
             </div>
             <p className="text-lg text-gray-300 leading-relaxed pl-14">
-              {project.result}
+              {project.readme?.result}
             </p>
             
             {/* Success metrics highlight */}
