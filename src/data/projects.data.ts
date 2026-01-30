@@ -4,6 +4,9 @@ import image1 from "../assets/imagens/tccine1.png"
 import image2 from "../assets/imagens/wilson2.png"
 import image3 from "../assets/imagens/imagem5.png"
 import image4 from "../assets/imagens/imagem4.png"
+import image6 from "../assets/imagens/imagem6.png"
+import image7 from "../assets/imagens/imagem7.png"
+import image8 from "../assets/imagens/imagem8.png"
 import video1 from "../assets/imagens/video1.mp4"
 import video2 from "../assets/imagens/video2.mp4"
 
@@ -43,26 +46,26 @@ export const projects: Project[] = [
 
     githubUrl: 'https://github.com/Anders0nlima/frontend-wilson',
     liveUrl: '*',
-  }
-  /*{
-    id: 3,
-    title: '[Analise de dados]',
-    subtitle: '------',
-    description: '[Estimativa de conclusão ~ 15.01.2026]',
-    image: image3,
-    tags: ['---', '---'],
-
-    readme: {
-      overview: '---',
-      process: '---',
-      technologies: ['---', '---', '---'],
-      images: ['/screens/home.png', '/screens/projects.png'],
-    },
-
-    githubUrl: '*',
-    liveUrl: '*',
   },
   {
+    id: 3,
+    title: 'Análise de Salários na Área de Dados',
+    subtitle: 'Dashboard interativo para exploração de dados salariais',
+    description: 'Dashboard interativo para exploração de dados salariais',
+    image: image6,
+    tags: ['Análise de Dados', 'Dashboard', 'Visualização de Dados'],
+
+    readme: {
+      overview: 'Dashboard interativo desenvolvido com Streamlit para análise de salários na área de dados ao longo dos últimos anos. O projeto permite explorar informações como cargos, senioridade, tipo de contrato, tamanho da empresa e modelo de trabalho (remoto, híbrido ou presencial), facilitando a compreensão de padrões e tendências do mercado.',
+      process: 'Os dados foram carregados a partir de um dataset público e tratados com a biblioteca Pandas para filtragem, agregação e cálculo de métricas. Foram implementados filtros dinâmicos para refinar a análise por ano, senioridade, tipo de contrato e tamanho da empresa. As visualizações foram construídas com Plotly, incluindo gráficos de barras, histogramas, gráfico de pizza e um mapa geográfico (choropleth) para análise salarial por país.',
+      technologies: ['Python', 'Pandas', 'Streamlit', 'Plotly'],
+      images: [{type: 'image', src: image7}, {type: 'image', src: image8}],
+    },
+
+    githubUrl: 'https://github.com/Anders0nlima/analise-de-dashboard',
+    liveUrl: 'https://dashboard-analys.streamlit.app/',
+  }
+  /*{
     id: 4,
     title: '[Analise de Dados]',
     subtitle: '------',

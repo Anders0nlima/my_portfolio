@@ -4,6 +4,9 @@ import image1 from "../assets/imagens/tccine1.png"
 import image2 from "../assets/imagens/wilson2.png"
 import image3 from "../assets/imagens/imagem5.png"
 import image4 from "../assets/imagens/imagem4.png"
+import image6 from "../assets/imagens/imagem6.png"
+import image7 from "../assets/imagens/imagem7.png"
+import image8 from "../assets/imagens/imagem8.png"
 import video1 from "../assets/imagens/video1.mp4"
 import video2 from "../assets/imagens/video2.mp4"
 
@@ -44,25 +47,25 @@ export const projectsEn: Project[] = [
     githubUrl: 'https://github.com/Anders0nlima/frontend-wilson',
     liveUrl: '*',
   },
-  /*{
+  {
     id: 3,
-    title: '[dados]',
-    subtitle: 'Site para salões',
-    description: 'Plataforma de agendamentos',
-    image: image3,
-    tags: ['React', 'JavaScript'],
+    title: 'Salary Analysis in the Data Area',
+    subtitle: 'Salary Analysis Dashboard for Data Roles',
+    description: 'Salary Analysis Dashboard for Data Roles',
+    image: image6,
+    tags: ['Data Analysis', 'Dashboard', 'Visualization'],
 
     readme: {
-      overview: 'Portfólio audiovisual desenvolvido para apresentação de projetos.',
-      process: 'Desenvolvimento da interface e organização do conteúdo.',
-      technologies: ['React', 'Vite', 'TypeScript'],
-      images: ['/screens/home.png', '/screens/projects.png'],
+      overview: 'An interactive dashboard built with Streamlit to analyze salary data in the data industry across multiple years. The project allows users to explore salary distributions, job roles, seniority levels, contract types, company sizes, and remote work proportions through dynamic filters and visualizations.',
+      process: 'The data was loaded from a public dataset and processed using Pandas for filtering, aggregation, and metric calculations. Interactive filters were implemented to allow users to refine the analysis by year, seniority, contract type, and company size. Key metrics and visual insights were created using Plotly, including bar charts, histograms, pie charts, and a choropleth map for geographic salary analysis.',
+      technologies: ['Python', 'Pandas', 'Streamlit', 'Plotly'],
+      images: [{type: 'image', src: image7}, {type: 'image', src: image8}],
     },
 
-    githubUrl: 'https://github.com/Anders0nlima/TC-cine',
-    liveUrl: 'https://anders0nlima.github.io/TC-cine/',
+    githubUrl: 'https://github.com/Anders0nlima/analise-de-dashboard',
+    liveUrl: 'https://dashboard-analys.streamlit.app/',
   },
-  {
+  /*{
     id: 4,
     title: 'Analise de Dados',
     subtitle: 'Site audiovisual',

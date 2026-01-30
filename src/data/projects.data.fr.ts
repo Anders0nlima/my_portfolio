@@ -4,6 +4,9 @@ import image1 from "../assets/imagens/tccine1.png"
 import image2 from "../assets/imagens/wilson2.png"
 import image3 from "../assets/imagens/imagem5.png"
 import image4 from "../assets/imagens/imagem4.png"
+import image6 from "../assets/imagens/imagem6.png"
+import image7 from "../assets/imagens/imagem7.png"
+import image8 from "../assets/imagens/imagem8.png"
 import video1 from "../assets/imagens/video1.mp4"
 import video2 from "../assets/imagens/video2.mp4"
 
@@ -44,25 +47,25 @@ export const projectsFr: Project[] = [
   githubUrl: 'https://github.com/Anders0nlima/frontend-wilson',
   liveUrl: '*',
   },
-  /*{
+  {
     id: 3,
-    title: '[dados]',
-    subtitle: 'Site para salões',
-    description: 'Plataforma de agendamentos',
-    image: image3,
-    tags: ['React', 'JavaScript'],
+    title: 'Analyse des salaires dans le domaine des données',
+    subtitle: 'Tableau de bord interactif pour l\'exploration des données salariales',
+    description: 'Tableau de bord interactif pour l\'exploration des données salariales',
+    image: image6,
+    tags: ['Analyse de données', 'Dashboard', 'Visualisation de données'],
 
     readme: {
-      overview: 'Portfólio audiovisual desenvolvido para apresentação de projetos.',
-      process: 'Desenvolvimento da interface e organização do conteúdo.',
-      technologies: ['React', 'Vite', 'TypeScript'],
-      images: ['/screens/home.png', '/screens/projects.png'],
+      overview: 'Tableau de bord interactif développé avec Streamlit pour analyser les salaires dans le domaine des données au cours des dernières années. Le projet permet d\'explorer des informations telles que les postes, le niveau de séniorité, le type de contrat, la taille de l\'entreprise et le mode de travail (télétravail, hybride ou présentiel), facilitant l\'identification des tendances et des modèles du marché.',
+      process: 'Les données ont été chargées à partir d\'un jeu de données public et traitées avec la bibliothèque Pandas pour le filtrage, l\'agrégation et le calcul des indicateurs. Des filtres dynamiques ont été mis en place afin d\'affiner l\'analyse par année, niveau de séniorité, type de contrat et taille de l\'entreprise. Les visualisations ont été réalisées avec Plotly, incluant des graphiques en barres, des histogrammes, un graphique circulaire et une carte choroplèthe pour analyser les salaires par pays.',
+      technologies: ['Python', 'Pandas', 'Streamlit', 'Plotly'],
+      images: [{type: 'image', src: image7}, {type: 'image', src: image8}],
     },
 
-    githubUrl: 'https://github.com/Anders0nlima/TC-cine',
-    liveUrl: 'https://anders0nlima.github.io/TC-cine/',
+    githubUrl: 'https://github.com/Anders0nlima/analise-de-dashboard',
+    liveUrl: 'https://dashboard-analys.streamlit.app/',
   },
-  {
+  /*{
     id: 4,
     title: 'Analise de Dados',
     subtitle: 'Site audiovisual',
