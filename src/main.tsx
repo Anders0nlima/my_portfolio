@@ -8,7 +8,7 @@ import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/my_portfolio">
       {/* PROVIDER DE LOADING (desativado) */}
       {/*
       <PageLoadingProvider>
