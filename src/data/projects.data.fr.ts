@@ -36,6 +36,8 @@ export const projectsFr: Project[] = [
   description: 'Système de prise de rendez-vous pour salon de beauté',
   image: image2,
   tags: ['React', 'TypeScript', 'JavaScript'],
+  warning1: 'Statut du projet : Hors ligne',
+  warning2: 'Le site est actuellement hors ligne. N\'hésitez pas à consulter le code source sur GitHub ou le lisez-moi.',
 
   readme: {
     overview: 'Wilson Hair est un système web de prise de rendez-vous développé pour optimiser la gestion des services dans les salons de beauté. La plateforme a été conçue avec trois niveaux d\'accès — administrateur, employé et client — garantissant que chaque utilisateur visualise et utilise uniquement les fonctionnalités correspondant à son profil, identifiées au moment de la connexion.',
@@ -46,6 +48,8 @@ export const projectsFr: Project[] = [
 
   githubUrl: 'https://github.com/Anders0nlima/frontend-wilson',
   liveUrl: '*',
+  isOffline: true,
+  //offlineMessage: 'Le site web est actuellement hors ligne, vous pouvez consulter le code source sur GitHub ou dans le fichier readme.',
   },
   {
     id: 3,
@@ -54,6 +58,8 @@ export const projectsFr: Project[] = [
     description: 'Tableau de bord interactif pour l\'exploration des données salariales',
     image: image6,
     tags: ['Analyse de données', 'Dashboard', 'Visualisation de données'],
+    sleepingTitle: "Application en veille",
+    sleepingMessage: "Cette application s'est mise en veille en raison de son inactivité. Cliquez sur 'Yes, get this app back up!' pour visiter la page et la réactiver !",
 
     readme: {
       overview: 'Tableau de bord interactif développé avec Streamlit pour analyser les salaires dans le domaine des données au cours des dernières années. Le projet permet d\'explorer des informations telles que les postes, le niveau de séniorité, le type de contrat, la taille de l\'entreprise et le mode de travail (télétravail, hybride ou présentiel), facilitant l\'identification des tendances et des modèles du marché.',
@@ -64,6 +70,7 @@ export const projectsFr: Project[] = [
 
     githubUrl: 'https://github.com/Anders0nlima/analise-de-dashboard',
     liveUrl: 'https://dashboard-analys.streamlit.app/',
+    isSleeping: true,
   },
   /*{
     id: 4,

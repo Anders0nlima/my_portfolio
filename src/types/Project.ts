@@ -11,6 +11,14 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
+  isOffline?: boolean;
+  isSleeping?: boolean;
+  sleepingTitle?: string;
+  sleepingMessage?: string;
+  //offlineMessage?: string;
+  warning1?: string; // Adicione isso
+  warning2?: string;
+  
 
   // ===== README (page content) =====
   readme?: {

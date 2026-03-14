@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Toaster } from 'react-hot-toast';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 import { LanguageProvider } from './context/LanguageContext';
@@ -93,6 +94,7 @@ function App() {
 
   return (
     <LanguageProvider>
+      <Toaster position="top-right" reverseOrder={false} />
       <ScrollToTop />
 
       {/* LOADER GLOBAL (desativado) */}

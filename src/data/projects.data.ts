@@ -36,16 +36,24 @@ export const projects: Project[] = [
     description: 'Sistema de agendamento para salão de beleza',
     image: image2,
     tags: ['React', 'TypeScript', 'JavaScript'],
+    warning1: "Status do Projeto: Offline",
+    warning2: "O site está atualmente offline. Sinta-se à vontade para ver o código-fonte no GitHub ou no readme.",
+    
 
     readme: {
       overview: 'Wilson Hair é um sistema web de agendamento desenvolvido para otimizar a gestão de atendimentos em salões de beleza. A plataforma foi projetada com três níveis de acesso — administrador, funcionário e cliente — garantindo que cada usuário visualize e utilize apenas as funcionalidades correspondentes ao seu perfil, identificadas no momento do login.',
       process: 'O desenvolvimento do projeto seguiu uma arquitetura baseada em camadas, separando responsabilidades entre os diferentes tipos de usuários. O foco esteve na criação de uma interface intuitiva e eficiente, facilitando o processo de agendamento para clientes, a organização da agenda para funcionários e o controle geral do sistema pelo administrador. Também houve atenção especial à usabilidade, responsividade e clareza dos fluxos de navegação.',
       technologies: ['React', 'Vite', 'JavaScript', 'TypeScript', 'Vite', 'Figma (UI Design)'],
       images: [{type: 'video', src: video2}, {type: 'image', src: image3}],
-    },
+    },    
 
     githubUrl: 'https://github.com/Anders0nlima/frontend-wilson',
     liveUrl: '*',
+    isOffline: true,
+    //offlineMessage: 'O site está fora do ar no momento, fique livre para ver o código fonte no github ou o readme.',
+    //warning1: "Status do Projeto: Offline",
+    //warning2: "O site está atualmente offline. Sinta-se à vontade para ver o código-fonte no GitHub ou no readme."
+
   },
   {
     id: 3,
@@ -54,6 +62,8 @@ export const projects: Project[] = [
     description: 'Dashboard interativo para exploração de dados salariais',
     image: image6,
     tags: ['Análise de Dados', 'Dashboard', 'Visualização de Dados'],
+    sleepingTitle: "App em repouso",
+    sleepingMessage: "Este aplicativo entrou em repouso por inatividade. Clique em 'Yes, get this app back up!' para acessar a página e reativá-lo!",
 
     readme: {
       overview: 'Dashboard interativo desenvolvido com Streamlit para análise de salários na área de dados ao longo dos últimos anos. O projeto permite explorar informações como cargos, senioridade, tipo de contrato, tamanho da empresa e modelo de trabalho (remoto, híbrido ou presencial), facilitando a compreensão de padrões e tendências do mercado.',
@@ -64,6 +74,7 @@ export const projects: Project[] = [
 
     githubUrl: 'https://github.com/Anders0nlima/analise-de-dashboard',
     liveUrl: 'https://dashboard-analys.streamlit.app/',
+    isSleeping: true,
   }
   /*{
     id: 4,

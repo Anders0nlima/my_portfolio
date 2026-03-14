@@ -36,6 +36,8 @@ export const projectsEn: Project[] = [
     description: 'Appointment scheduling system for beauty salons',
     image: image2,
     tags: ['React', 'TypeScript', 'JavaScript'],
+    warning1: 'Project Status: Offline',
+    warning2: 'The website is currently offline. Feel free to view the source code on GitHub or the readme.',
 
     readme: {
       overview: 'Wilson Hair is a web-based appointment scheduling system developed to optimize service management in beauty salons. The platform was designed with three access levels — administrator, employee, and client — ensuring that each user can view and use only the functionalities corresponding to their profile, identified at the time of login.',
@@ -46,6 +48,8 @@ export const projectsEn: Project[] = [
 
     githubUrl: 'https://github.com/Anders0nlima/frontend-wilson',
     liveUrl: '*',
+    isOffline: true,
+    //offlineMessage: 'The website is currently offline, feel free to view the source code on GitHub or in the readme.',
   },
   {
     id: 3,
@@ -54,6 +58,8 @@ export const projectsEn: Project[] = [
     description: 'Salary Analysis Dashboard for Data Roles',
     image: image6,
     tags: ['Data Analysis', 'Dashboard', 'Visualization'],
+    sleepingTitle: "App is sleeping",
+    sleepingMessage: "This app has gone to sleep due to inactivity. Click 'Yes, get this app back up!' to visit the page and wake it back up!",
 
     readme: {
       overview: 'An interactive dashboard built with Streamlit to analyze salary data in the data industry across multiple years. The project allows users to explore salary distributions, job roles, seniority levels, contract types, company sizes, and remote work proportions through dynamic filters and visualizations.',
@@ -64,6 +70,7 @@ export const projectsEn: Project[] = [
 
     githubUrl: 'https://github.com/Anders0nlima/analise-de-dashboard',
     liveUrl: 'https://dashboard-analys.streamlit.app/',
+    isSleeping: true,
   },
   /*{
     id: 4,
