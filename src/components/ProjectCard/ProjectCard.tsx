@@ -36,7 +36,7 @@ const ProjectCard = ({
   const handleOfflineClick = (e: React.MouseEvent) => {
     e.preventDefault();
 
-    toast((toastItem) => (
+    toast(() => (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <span style={{ fontSize: '1.2rem', color: '#00D1FF', display: 'flex', alignItems: 'center' }}>
@@ -74,7 +74,7 @@ const ProjectCard = ({
           <span style={{ fontSize: '1.2rem', display: 'flex', alignItems: 'center' }}>
             ⏳
           </span>
-          <span style={{ fontWeight: 'bold', color: '#00D1FF' }}> {/* Amarelo de atenção */}
+          <span style={{ fontWeight: 'bold', color: '#00D1FF' }}> 
             {sleepingTitle || t('projects.sleepingTitle')}
           </span>
         </div>
@@ -113,7 +113,7 @@ const ProjectCard = ({
         border: '1px solid #00D1FF', // Borda amarela combinando com o ícone
         borderRadius: '8px',
         padding: '16px',
-        boxShadow: '0 4px 12px rgba(250, 204, 21, 0.2)', // Sombra amarela
+        boxShadow: '0 4px 12px rgba(0, 209, 255, 0.3)', 
       },
     });
   };
