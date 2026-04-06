@@ -1,14 +1,14 @@
 import type { Project } from '../types/Project';
 
 import image1 from "../assets/imagens/tccine1.png"
-import image2 from "../assets/imagens/wilson2.png"
-import image3 from "../assets/imagens/imagem5.png"
+//import image2 from "../assets/imagens/wilson2.png"
+//import image3 from "../assets/imagens/imagem5.png"
 import image4 from "../assets/imagens/imagem4.png"
 import image6 from "../assets/imagens/imagem6.png"
 import image7 from "../assets/imagens/imagem7.png"
 import image8 from "../assets/imagens/imagem8.png"
 import video1 from "../assets/imagens/video1.mp4"
-import video2 from "../assets/imagens/video2.mp4"
+//import video2 from "../assets/imagens/video2.mp4"
 
 export const projectsEn: Project[] = [
   {
@@ -29,7 +29,7 @@ export const projectsEn: Project[] = [
     githubUrl: 'https://github.com/Anders0nlima/TC-cine',
     liveUrl: 'https://anders0nlima.github.io/TC-cine/',
   },
-  {
+  /*{
     id: 2,
     title: 'Wilson Hair',
     subtitle: 'Appointment scheduling system for beauty salons',
@@ -50,7 +50,7 @@ export const projectsEn: Project[] = [
     liveUrl: '*',
     isOffline: true,
     //offlineMessage: 'The website is currently offline, feel free to view the source code on GitHub or in the readme.',
-  },
+  },*/
   {
     id: 3,
     title: 'Salary Analysis in the Data Area',

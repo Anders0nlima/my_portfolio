@@ -1,14 +1,14 @@
 import type { Project } from '../types/Project';
 
 import image1 from "../assets/imagens/tccine1.png"
-import image2 from "../assets/imagens/wilson2.png"
-import image3 from "../assets/imagens/imagem5.png"
+//import image2 from "../assets/imagens/wilson2.png"
+//import image3 from "../assets/imagens/imagem5.png"
 import image4 from "../assets/imagens/imagem4.png"
 import image6 from "../assets/imagens/imagem6.png"
 import image7 from "../assets/imagens/imagem7.png"
 import image8 from "../assets/imagens/imagem8.png"
 import video1 from "../assets/imagens/video1.mp4"
-import video2 from "../assets/imagens/video2.mp4"
+//import video2 from "../assets/imagens/video2.mp4"
 
 export const projects: Project[] = [
   {
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/Anders0nlima/TC-cine',
     liveUrl: 'https://anders0nlima.github.io/TC-cine/',
   },
-  {
+  /*{
     id: 2,
     title: 'Wilson Hair',
     subtitle: 'Sistema de agendamento para salão de beleza',
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     //warning1: "Status do Projeto: Offline",
     //warning2: "O site está atualmente offline. Sinta-se à vontade para ver o código-fonte no GitHub ou no readme."
 
-  },
+  },*/
   {
     id: 3,
     title: 'Análise de Salários na Área de Dados',
