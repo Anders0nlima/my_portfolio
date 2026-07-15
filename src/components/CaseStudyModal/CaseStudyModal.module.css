@@ -144,6 +144,7 @@
   line-height: 1.75;
   padding-left: 56px;
   margin: 0;
+  white-space: pre-line;
 }
 
 .chartGrid {

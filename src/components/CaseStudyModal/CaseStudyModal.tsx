@@ -117,34 +117,6 @@ const CaseStudyModal = ({ project, onClose }: CaseStudyModalProps) => {
             </p>
           </div>
 
-          {/* TECNOLOGIAS */}
-          <div className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <div
-                className={styles.iconBox}
-                style={{
-                  backgroundColor: 'rgba(34, 197, 94, 0.1)',
-                  borderColor: 'rgba(34, 197, 94, 0.3)',
-                }}
-              >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                </svg>
-              </div>
-
-              <h3 className={styles.sectionTitle}>
-                {t('caseStudy.technologies')}
-              </h3>
-            </div>
-
-            <div className={styles.tags}>
-              {project.readme?.technologies.map((tech, index) => (
-                <span key={index} className={styles.tag}>
-                  #{tech}
-                </span>
-              ))}
-            </div>
-          </div>
 
           {/* IMAGENS / GRÁFICOS (OPCIONAL) */}
           {project.readme?.images && project.readme.images.length > 0 && (

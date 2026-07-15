@@ -76,6 +76,9 @@ const Hero = () => {
         {/* ===== RIGHT: ANIMATION ===== */}
         <div className={styles.modelContainer}>
           <HeroAnimation />
+          <div className={styles.locationBadge}>
+            📍 Belém-PA
+          </div>
         </div>
 
       </div>

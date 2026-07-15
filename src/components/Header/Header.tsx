@@ -9,9 +9,12 @@ import frIcon from '../../assets/icons/france_3909323.png';
 import enIcon from '../../assets/icons/united-kingdom_3909136.png';
 
 // CVs
-import cvPt from '../../assets/cv/Curriculo-pt.pdf';
-import cvEn from '../../assets/cv/Curriculo-en.pdf';
-import cvFr from '../../assets/cv/Curriculo-en.pdf';
+//import cvPt from '../../assets/cv/Curriculo-pt.pdf';
+//import cvEn from '../../assets/cv/Curriculo-en.pdf';
+//import cvFr from '../../assets/cv/Curriculo-en.pdf';
+import cvPt from '../../assets/cv/Curriculo_atual.pdf';
+import cvEn from '../../assets/cv/Curriculo_atual.pdf';
+import cvFr from '../../assets/cv/Curriculo_atual.pdf';
 
 const cvByLanguage: Record<Language, string> = {
   pt: cvPt,

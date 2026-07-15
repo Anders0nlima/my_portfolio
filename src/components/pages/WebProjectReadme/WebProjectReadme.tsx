@@ -31,7 +31,27 @@ const WebProjectReadme = () => {
       </div>
 
       <article className={styles.content}>
-        {project.readme.overview && <p>{project.readme.overview}</p>}
+        {project.readme.overview && (
+          <div className={styles.section}>
+            <h2>Overview</h2>
+            {project.readme.overview.split('\n').map((paragraph, index) =>
+              paragraph.trim() !== '' ? (
+                <p key={index}>{paragraph.trim()}</p>
+              ) : null
+            )}
+          </div>
+        )}
+
+        {project.readme.process && (
+          <div className={styles.section}>
+            <h2>Processo de Desenvolvimento</h2>
+            {project.readme.process.split('\n').map((paragraph, index) =>
+              paragraph.trim() !== '' ? (
+                <p key={index}>{paragraph.trim()}</p>
+              ) : null
+            )}
+          </div>
+        )}
       </article>
     </section>
   );

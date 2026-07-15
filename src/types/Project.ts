@@ -13,6 +13,7 @@ export interface Project {
   tags: string[];
   isOffline?: boolean;
   isSleeping?: boolean;
+  isNotHosted?: boolean;
   sleepingTitle?: string;
   sleepingMessage?: string;
   //offlineMessage?: string;

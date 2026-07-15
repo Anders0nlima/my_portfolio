@@ -49,6 +49,7 @@ const Projects = ({ onProjectClick }: ProjectsProps) => {
             onReadmeClick={() => onProjectClick(project)}
             isOffline={project.isOffline}
             isSleeping={project.isSleeping}
+            isNotHosted={project.isNotHosted}
             warning1={project.warning1} 
             warning2={project.warning2} 
             sleepingTitle={project.sleepingTitle}

@@ -49,9 +49,9 @@ const translations = {
     },
     hero: {
       badge: '-------',
-      headline1: 'Web Development &',
-      headline2: 'Data Analysis Student',
-      subheadline: 'Information Systems student focused on web development and data analysis. I build interactive web applications and data dashboards using React, Vite, JavaScript, TypeScript, Power BI, and Excel, transforming raw data into clear insights and practical solutions.',
+      headline1: 'Web Developer\u00a0&',
+      headline2: 'Data Analyst',
+      subheadline: 'Information Systems student and Full Stack Web Developer. I build scalable web applications and data-driven solutions using React, TypeScript, and Python (FastAPI). Passionate about integrating Artificial Intelligence (LLMs/SLMs) and modern data tools to transform complex data into clear, actionable insights and practical business solutions.',
       viewProjects: 'View Projects',
       getInTouch: 'Get in Touch',
       stats: {
@@ -76,7 +76,7 @@ const translations = {
         volunteer: 'Volunteer',
         professionalExp: [
           {
-              title: 'TCCine Project',
+              title: 'TC|CINE Project',
               company: 'Development for an audiovisual company',
               period: '2025',
               description: 'Development of an institutional website for production use, being my first project published in a real-world environment.'
@@ -88,10 +88,10 @@ const translations = {
               description: 'First freelance project, developed to support educational activities, with a focus on logic and usability.'
             },
             {
-              title: 'Beauty Salon Project',
-              company: 'System under development for a company in the beauty sector',
+              title: 'ANPG',
+              company: 'National Association of Graduate Students (ANPG)',
               period: '2026 - Present',
-              description: 'Project developed as part of the integrative project of the Bolsa Futuro Digital program, applying full-stack development concepts.'
+              description: 'Worked as a Software Development Resident, supporting and contributing to the development of an application for the National Association of Graduate Students (ANPG), with a strong focus on teamwork and software development.'
             }
         ],
         academicExp: [
@@ -102,7 +102,7 @@ const translations = {
             description: 'Academic training focused on software development, programming logic, databases, and fundamentals of information systems.'
           },
           {
-            title: 'Former scholarship holder of the Bolsa Futuro Digital program',
+            title: 'Scholarship holder of the Bolsa Futuro Digital program',
             company: 'Apoti Academy',
             period: '2025 - 2026',
             description: 'Training program focused on backend development using Python, including programming practices, problem solving, and the development of collaboration and networking skills.'
@@ -139,7 +139,7 @@ const translations = {
     },
 projects: {
   title: 'Featured Projects',
-  subtitle: 'Explore case studies showcasing data-driven solutions and their measurable impact',
+  subtitle: 'Explore some of my featured projects and discover the technologies, challenges, and solutions behind each one.',
 
   // 🔧 BOTÕES / AÇÕES
   viewCaseStudy: 'View Case Study',
@@ -201,7 +201,7 @@ projects: {
       overview: 'Overview',
       process: 'Process',
       technologies: 'Technologies',
-      close: 'Close Case Study'
+      close: 'Close Project'
     },
     contact: {
       title: 'Get In Touch',
@@ -241,9 +241,9 @@ projects: {
     },
     hero: {
       badge: '-------',
-      headline1: 'Desenvolvedor Web e',
-      headline2: 'Estudante de Análise de Dados.',
-      subheadline: 'Estudante de Sistemas de Informação com foco em desenvolvimento web e análise de dados. Crio aplicações web interativas e dashboards de dados usando React, Vite, JavaScript, TypeScript, Power BI e Excel, transformando dados brutos em insights claros e soluções práticas.',
+      headline1: 'Web Developer\u00a0&',
+      headline2: 'Data Analyst',
+      subheadline: 'Estudante de Sistemas de Informação e Desenvolvedor Web Full Stack. Construo aplicações web escaláveis e soluções orientadas a dados utilizando React, TypeScript e Python (FastAPI). Entusiasta da integração de Inteligência Artificial (LLMs/SLMs) e ferramentas modernas para transformar dados complexos em insights claros e acionáveis, gerando soluções práticas de negócio.',
       viewProjects: 'Ver Projetos',
       getInTouch: 'Entre em Contato',
       stats: {
@@ -268,7 +268,7 @@ projects: {
         volunteer: 'Voluntariado',
         professionalExp: [
           {
-            title: 'Projeto TCCine',
+            title: 'Projeto TC|CINE',
             company: 'Desenvolvimento para empresa de audiovisual',
             period: '2025',
             description: 'Desenvolvimento de website institucional destinado à produção, sendo meu primeiro projeto publicado em ambiente real.'
@@ -280,10 +280,10 @@ projects: {
             description: 'Primeiro projeto freelancer, desenvolvido para apoiar atividades educacionais, com foco em lógica e usabilidade.'
           },
           {
-            title: 'Projeto Salão de Beleza',
-            company: 'Sistema em desenvolvimento para empresa do setor de beleza',
+            title: 'ANPG',
+            company: 'Associação Nacional de Pós-Graduandos (ANPG)',
             period: '2026 - presente',
-            description: 'Projeto desenvolvido como parte do projeto integrador do programa Bolsa Futuro Digital, aplicando conceitos de desenvolvimento full stack.'
+            description: 'Atuação como residente de desenvolvimento, acompanhando e contribuindo para a construção de uma aplicação destinada à Associação Nacional de Pós-Graduandos (ANPG), com foco na colaboração em equipe e no desenvolvimento de software.'
           }
         ],
         academicExp: [
@@ -294,7 +294,7 @@ projects: {
             description: 'Formação acadêmica com foco em desenvolvimento de software, lógica de programação, banco de dados e fundamentos de sistemas de informação.'
           },
           {
-            title: 'Ex-bolsista do programa Bolsa Futuro Digital',
+            title: 'Bolsista do programa Bolsa Futuro Digital',
             company: 'Apoti Academy',
             period: '2025 - 2026',
             description: 'Programa de formação com foco em desenvolvimento backend utilizando Python, incluindo práticas de programação, resolução de problemas e desenvolvimento de habilidades de colaboração e networking.'
@@ -331,7 +331,7 @@ projects: {
     },
     projects: {
       title: 'Projetos em Destaque',
-      subtitle: 'Explore estudos de caso mostrando soluções orientadas por dados e seu impacto mensurável',
+      subtitle: 'Explore alguns dos meus principais projetos e descubra as tecnologias, desafios e soluções aplicadas em cada um deles.',
       viewCaseStudy: 'Ver Estudo de Caso',
       projects: [
         {
@@ -372,7 +372,7 @@ projects: {
       overview: 'Visão Geral',
       process: 'Processo',
       technologies: 'Technologies',
-      close: 'Fechar Estudo de Caso'
+      close: 'Fechar Projeto'
     },
     contact: {
       title: 'Entre em Contato',
@@ -412,9 +412,9 @@ projects: {
     },
     hero: {
       badge: '-------',
-      headline1: 'Développeur Web et',
-      headline2: 'Étudiant en Analyse de Données',
-      subheadline: 'Étudiant en systèmes d\'information, spécialisé en développement web et analyse de données. Je crée des applications web interactives et des tableaux de bord de données à l\'aide de React, Vite, JavaScript, TypeScript, Power BI et Excel, transformant ainsi les données brutes en informations claires et en solutions concrètes.',
+      headline1: 'Web Developer\u00a0&',
+      headline2: 'Data Analyst',
+      subheadline: 'Étudiant en Systèmes d\'Information et Développeur Web Full Stack. Je conçois des applications web évolutives et des solutions orientées données en utilisant React, TypeScript et Python (FastAPI). Passionné par l\'intégration de l\'Intelligence Artificielle (LLMs/SLMs) et des outils de données modernes pour transformer des données complexes en informations claires et exploitables, ainsi qu\'en solutions commerciales pratiques.',
       viewProjects: 'Voir les Projets',
       getInTouch: 'Me Contacter',
       stats: {
@@ -439,22 +439,22 @@ projects: {
         volunteer: 'Bénévolat',
         professionalExp: [
           {
-            title: 'Projet TCCine',
+            title: 'Projet TC|CINE',
             company: 'Développement pour une entreprise audiovisuelle',
             period: '2025',
-            description: 'Développement d’un site institutionnel destiné à la production, constituant mon premier projet publié dans un environnement réel.'
+            description: 'Développement d\'un site institutionnel destiné à la production, constituant mon premier projet publié dans un environnement réel.'
           },
           {
             title: 'Projet Mental Calculation',
             company: 'Système développé pour un professeur de mathématiques',
             period: '2025',
-            description: 'Premier projet freelance, développé pour soutenir des activités éducatives, avec un accent sur la logique et l’ergonomie.'
+            description: 'Premier projet freelance, développé pour soutenir des activités éducatives, avec un accent sur la logique et l\'ergonomie.'
           },
           {
-            title: 'Projet Salon de Beauté',
-            company: 'Système en cours de développement pour une entreprise du secteur de la beauté',
+            title: 'ANPG',
+            company: 'Association Nationale des Étudiants de Troisième Cycle (ANPG)',
             period: '2026 - Présent',
-            description: 'Projet développé dans le cadre du projet intégrateur du programme Bolsa Futuro Digital, en appliquant des concepts de développement full stack.'
+            description: 'Participation en tant que résident en développement logiciel, en accompagnant et en contribuant au développement d\'une application destinée à l\'Association Nationale des Étudiants de Troisième Cycle (ANPG), avec un accent particulier sur le travail en équipe et le développement logiciel.'
           }
         ],
         academicExp: [
@@ -465,7 +465,7 @@ projects: {
             description: 'Formation académique axée sur le développement logiciel, la logique de programmation, les bases de données et les fondements des systèmes d\'information.'
           },
           {
-            title: 'Ancien boursier du programme Bolsa Futuro Digital',
+            title: 'Boursier du programme Bolsa Futuro Digital',
             company: 'Apoti Academy',
             period: '2025 - 2026',
             description: 'Programme de formation axé sur le développement backend en Python, incluant des pratiques de programmation, la résolution de problèmes et le développement de compétences en collaboration et en réseautage.'
@@ -502,7 +502,7 @@ projects: {
     },
     projects: {
       title: 'Projets Phares',
-      subtitle: 'Explorez des études de cas présentant des solutions basées sur les données et leur impact mesurable',
+      subtitle: 'Découvrez quelques-uns de mes principaux projets et explorez les technologies, les défis et les solutions mis en œuvre dans chacun d\'eux.',
       viewCaseStudy: 'Voir l\'Étude de Cas',
       projects: [
         {
@@ -543,7 +543,7 @@ projects: {
       overview: 'Vue d\'ensemble',
       process: 'Processus',
       technologies: 'Technologies',
-      close: 'Fermer l\'Étude de Cas'
+      close: 'Fermer le projet'
     },
     contact: {
       title: 'Me Contacter',

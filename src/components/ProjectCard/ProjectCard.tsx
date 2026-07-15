@@ -11,6 +11,7 @@ interface ProjectCardProps {
   onReadmeClick: () => void;
   isOffline?: boolean;
   isSleeping?: boolean;
+  isNotHosted?: boolean;
   warning1?: string; 
   warning2?: string; 
   sleepingTitle?: string;
@@ -26,6 +27,7 @@ const ProjectCard = ({
   onReadmeClick,
   isOffline = false,
   isSleeping = false,
+  isNotHosted = false,
   warning1,
   warning2,
   sleepingTitle,
@@ -88,7 +90,7 @@ const ProjectCard = ({
           <button
             onClick={() => {
               toast.dismiss(toastItem.id); // Fecha a notificação
-              if (liveUrl) window.open(liveUrl, '_blank'); // Abre o site em nova aba
+              if (liveUrl && !isNotHosted) window.open(liveUrl, '_blank'); // Abre o site em nova aba
             }}
             style={{
               background: '#00D1FF',
@@ -138,7 +140,7 @@ const ProjectCard = ({
               >
                 Visit
               </button>
-            ) : isSleeping ? (
+            ) : (isSleeping || isNotHosted) ? (
               <button
                 onClick={handleSleepingClick} // <--- Chama o alerta de dormir
                 className={styles.primaryBtn}
